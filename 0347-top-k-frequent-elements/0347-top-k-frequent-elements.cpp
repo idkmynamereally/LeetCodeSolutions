@@ -3,36 +3,36 @@ class Solution
 public:
 	std::vector<int> topKFrequent(std::vector<int>& nums, int k)
 	{
-		std::vector<std::pair<int, int>> v;
 		std::unordered_map<int, int> m;
-		for (int i : nums)
+		for (const int& i : nums)
 		{
-			if (m.contains(i))
-			{
-				m[i]++;
-			}
-			else
-			{
-				m[i] = 1;
-			}
+			m[i]++;
 		}
-		for (auto it : m) 
+		
+		std::vector<std::pair<int, int>> sorter;
+
+		for (const auto& p : m)
 		{
-			v.push_back(it);
+			sorter.push_back(p);
 		}
-		std::sort
-		(v.begin(), v.end(), 
-			[](std::pair<int, int> a, std::pair<int, int> b)
+
+		std::sort(sorter.begin(), sorter.end(),
+			[](const std::pair<int, int>& a, const std::pair<int, int>& b)
 			{
 				return a.second > b.second;
 			}
 		);
+		
 		std::vector<int> ret;
-		auto it = v.begin();
-		for (int i = 0; i < k; i++)
+		int i = 0;
+		for (const auto& p : sorter)
 		{
-			ret.push_back((*it).first);
-			it++;
+			ret.push_back(p.first);
+			++i;
+			if (i == k)
+			{
+				break;
+			}
 		}
 		return ret;
 	}
