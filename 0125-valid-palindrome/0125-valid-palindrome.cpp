@@ -18,9 +18,9 @@ public:
                 r--;
                 continue;
             }
-            if (cl <= 90)
+            if (cl < 91)
                 cl += 32;
-            if (cr <= 90)
+            if (cr < 91)
                 cr += 32;
             if (cl != cr)
                 return false;
