@@ -2,6 +2,9 @@ class Solution {
 public:
     int maxArea(std::vector<int>& height) 
     {
+        ios::sync_with_stdio(false);
+        cin.tie(nullptr);
+        cout.tie(nullptr);
         int length = 0;
         int breadth = 0;
         int maxVolume = -1;
