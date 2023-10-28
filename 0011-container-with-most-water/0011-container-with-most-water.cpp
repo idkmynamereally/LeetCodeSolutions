@@ -18,9 +18,21 @@ public:
             maxVolume = maxVolume > currVolume ? maxVolume : currVolume;
 
             if (height[l] > height[r])
-                r--;
+            {
+                int currHeight = height[r];
+                while (r > l && height[r] <= currHeight)
+                {
+                    r--;
+                }
+            }
             else
-                l++;
+            {
+                int currHeight = height[l];
+                while (l < r && height[l] <= currHeight)
+                {
+                    l++;
+                }
+            }
         }
         return maxVolume;
     }
