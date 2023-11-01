@@ -12,7 +12,7 @@ public:
     {
         topStack++;
         if (topStack >= stack.size())
-            stack.resize(stack.size() + 2);
+            stack.resize(stack.size() + 5);
         stack[topStack].first = val;
         if (topStack == 0)
             stack[topStack].second = val;
