@@ -1,32 +1,31 @@
-class MinStack 
+class MinStack
 {
 public:
-    std::vector<int> stack;
-    std::vector<int> minArr;
+    std::vector<std::pair<int,int>> stack;
     int topStack{};
     MinStack()
     {
         topStack = -1;
     }
 
-    void push(int val) 
+    void push(int val)
     {
         topStack++;
-        stack.push_back(0);
-        minArr.push_back(0);
-        stack[topStack] = val;
+        if (topStack >= stack.size())
+            stack.resize(stack.size() + 2);
+        stack[topStack].first = val;
         if (topStack == 0)
-            minArr[topStack] = val;
+            stack[topStack].second = val;
         else
         {
-            if (val < minArr[topStack - 1])
-                minArr[topStack] = val;
+            if (val < stack[topStack - 1].second)
+                stack[topStack].second = val;
             else
-                minArr[topStack] = minArr[topStack - 1];
+                stack[topStack].second = stack[topStack - 1].second;
         }
     }
 
-    void pop() 
+    void pop()
     {
         if (topStack == -1)
             return;
@@ -35,11 +34,11 @@ public:
 
     int top()
     {
-        return stack[topStack];
+        return stack[topStack].first;
     }
 
     int getMin()
     {
-        return minArr[topStack];
+        return stack[topStack].second;
     }
 };
