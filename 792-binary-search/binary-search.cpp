@@ -2,6 +2,10 @@ class Solution {
 public:
     int search(vector<int>& nums, int target) 
     {
+        ios::sync_with_stdio(false);
+        cin.tie(0);
+        cout.tie(0);
+
         int start {0};
         int end = nums.size()-1;
         int middle{};
