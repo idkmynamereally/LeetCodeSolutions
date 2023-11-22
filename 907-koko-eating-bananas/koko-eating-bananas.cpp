@@ -2,6 +2,10 @@ class Solution {
 public:
     int minEatingSpeed(std::vector<int>& piles, int h)
     {
+        cout.tie(0);
+        cin.tie(0);
+        ios_base::sync_with_stdio(0);
+        
         auto maxer{ *std::max_element(piles.begin(), piles.end()) };
         
         int left{ 1 };
