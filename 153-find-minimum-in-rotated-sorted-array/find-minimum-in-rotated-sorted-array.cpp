@@ -9,17 +9,14 @@ public:
         while (left <= right)
         {
             middle = left + floor((right - left) / 2);
-            int l = nums[left];
-            int r = nums[right];
-            int m = nums[middle];
 
             //std::cout << "l : " << l << " m : " << m << " r : " << r << "\n";
 
-            if (l <= r && l <= m)
-                return l;
-            if (l <= m && m >= r)
+            if (nums[left] <= nums[right] && nums[left] <= nums[middle])
+                return nums[left];
+            if (nums[left] <= nums[middle] && nums[middle] >= nums[right])
                 left = middle + 1;
-            else if (l > m)
+            else if (nums[left] > nums[middle])
                 right = middle;
         }
         return 0;
