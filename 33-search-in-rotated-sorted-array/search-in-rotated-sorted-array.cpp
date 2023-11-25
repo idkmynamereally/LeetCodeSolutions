@@ -13,15 +13,11 @@ public:
             if (nums[middle] == target)
                 return middle;
             
-            int l = nums[left];
-            int r = nums[right];
-            int m = nums[middle];
-
-            if (target < m)
+            if (target < nums[middle])
             {
-                if (l <= m)
+                if (nums[left] <= nums[middle])
                 {
-                    if (target < l)
+                    if (target < nums[left])
                         left = middle + 1;
                     else
                         right = middle - 1;
@@ -33,9 +29,9 @@ public:
             }
             else
             {
-                if (m <= r)
+                if (nums[middle] <= nums[right])
                 {
-                    if (target > r)
+                    if (target > nums[right])
                         right = middle - 1;
                     else
                         left = middle + 1;
