@@ -23,7 +23,6 @@ public:
         while (left <= right)
         {
             middle = left + floor((right - left)/ 2);
-            std::cout << "mid : " << middle;
             midTimeStamp = m[key][middle].first;
             if (midTimeStamp == timestamp)
             {
@@ -37,14 +36,12 @@ public:
             {
                 right = middle - 1;
             }
-        }        
-        if (timestamp < m[key][0].first)
-            return "";
-        while (middle > 0 && midTimeStamp > timestamp)
-        {
-            middle--;
-            midTimeStamp = m[key][middle].first;
         }
-        return m[key][middle].second;
+        if (right >= 0)
+        {
+            return m[key][right].second;
+        }
+        else
+            return "";
     }
 };
