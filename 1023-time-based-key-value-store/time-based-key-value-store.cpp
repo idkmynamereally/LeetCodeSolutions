@@ -1,6 +1,6 @@
 class TimeMap {
 public:
-    std::map<std::string, std::vector<std::pair<int, std::string>>> m;
+    std::unordered_map<std::string, std::vector<std::pair<int, std::string>>> m;
     TimeMap() 
     {
         
