@@ -8,13 +8,11 @@ public:
         int maxf{ 1 };
         std::unordered_map<char, int> m{};
         m[s[r]]++;
-        bool shortened{ false };
-
+        
         while (r < s.size())
         {
             if (isStringValid(r-l+1, maxf, k))
             {
-                //std::cout << "Substr : " << s.substr(l, r - l + 1);
                 maxSize = maxSize > (r - l + 1) ? maxSize : (r - l + 1);
                 r++;
                 m[s[r]]++;
@@ -24,7 +22,6 @@ public:
             {
                 m[s[l]]--;
                 l++;
-                maxf = getMaxCharCount(m);
             }
         }
         return maxSize;
