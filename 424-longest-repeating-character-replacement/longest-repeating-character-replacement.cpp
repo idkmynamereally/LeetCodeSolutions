@@ -26,18 +26,7 @@ public:
         }
         return maxSize;
     }
-
-    int getMaxCharCount(std::unordered_map<char, int>& m)
-    {
-        int max{ 0 };
-        for (const auto& i : m)
-        {
-            if (i.second > max)
-                max = i.second;
-        }
-        return max;
-    }
-
+    
     bool isStringValid(int subStrSize, int highestCharCount, int k)
     {
         if (subStrSize - highestCharCount <= k)
