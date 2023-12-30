@@ -2,11 +2,15 @@ class Solution
 {
 public:
 
-    bool check_permutation(const std::unordered_map<char, int>& a, const std::unordered_map<char, int>& b)
+    bool check_permutation(int* a, int* b)
     {
-        if (a == b)
-            return true;
-        return false;
+        for (int i = 0; i < 26; i++)
+        {
+            if (a[i] == b[i])
+                continue;
+            return false;
+        }
+        return true;
     }
 
     bool checkInclusion(std::string s1, std::string s2)
@@ -15,24 +19,17 @@ public:
         int s2Size = s2.size();
         if (s1Size > s2Size)
             return false;
-        std::unordered_map<char, int> s1Map;
-        std::unordered_map<char, int> s2Map;
+        int s1Map[26]{};
+        int s2Map[26]{};
 
-        char c = 'a';
-        for (int i = 0; i < 26; i++)
-        {
-            s1Map[c] = 0;
-            s2Map[c] = 0;
-            c++;
-        }
         for (char c : s1)
         {
-            s1Map[c]++;
+            s1Map[c - 'a']++;
         }
 
         for (int i = 0; i < s1Size; i++)
         {
-            s2Map[s2[i]]++;
+            s2Map[s2[i] - 'a']++;
         }
 
         for (int i = 0; i <= (s2Size - s1Size); i++)
@@ -41,9 +38,9 @@ public:
             {
                 return true;
             }
-            s2Map[s2[i]]--;
+            s2Map[s2[i] - 'a']--;
             if ((i + s1Size) < s2Size)
-                s2Map[s2[i+s1Size]]++;
+                s2Map[s2[i+s1Size] - 'a']++;
         }
         return false;
     }
