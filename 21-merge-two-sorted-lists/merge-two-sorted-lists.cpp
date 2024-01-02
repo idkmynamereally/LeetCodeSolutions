@@ -6,7 +6,7 @@ public:
         ListNode n = ListNode();
         ListNode* newHead = &n;
         ListNode* temp = newHead;
-        while (list1 != NULL && list2 != NULL)
+        while (list1 && list2)
         {
             if (list1->val < list2->val)
             {
