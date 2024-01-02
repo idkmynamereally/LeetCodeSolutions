@@ -20,7 +20,7 @@ public:
             }
             temp = temp->next;
         }
-        if (list1 == NULL)
+        if (!list1)
         {
             temp->next = list2;
         }
