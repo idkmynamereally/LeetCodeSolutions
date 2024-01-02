@@ -2,7 +2,7 @@ class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) 
     {
-        ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+        //ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
         ListNode n = ListNode();
         ListNode* newHead = &n;
         ListNode* temp = newHead;
