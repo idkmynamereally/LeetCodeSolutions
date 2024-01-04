@@ -11,7 +11,6 @@ public:
         }
         
         temp = head;
-        Node* newHead = m[head];
         Node* newTemp = m[head];
         while (temp)
         {
@@ -20,6 +19,6 @@ public:
             temp = temp->next;
             newTemp = newTemp->next;
         }
-        return newHead;
+        return m[head];
     }
 };
