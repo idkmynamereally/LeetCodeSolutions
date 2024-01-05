@@ -1,0 +1,2 @@
+<h2>add-two-numbers Notes</h2><hr>Hacky Tacky Shacky Solution
+its perfect but i got lost in trying to augment the first list as the answer. will be cleaner if i just created a new linked list but fuck it
