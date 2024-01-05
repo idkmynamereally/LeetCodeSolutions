@@ -4,14 +4,12 @@ public:
     {
         ListNode* slowP = head;
         ListNode* fastP = head;
-        bool start = false;
         while (fastP != NULL && fastP->next != NULL)
         {
-            if (start && slowP == fastP)
-                return true;
-            start = true;
             slowP = slowP->next;
             fastP = fastP->next->next;
+            if (slowP == fastP)
+                return true;
         }
         return false;
     }
