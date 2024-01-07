@@ -6,7 +6,11 @@ public:
         std::pair<int, int> val;
         LinkedListNode* next;
         LinkedListNode* prev;
-        LinkedListNode(int a, int b) : val(std::pair<int, int>(a, b)), next(nullptr), prev(nullptr) {}
+        LinkedListNode(int a, int b) : val(std::pair<int, int>(a, b)), next(nullptr), prev(nullptr)     
+        {
+            cin.tie(0);
+            ios_base::sync_with_stdio(false);
+        }
     };
 
 
