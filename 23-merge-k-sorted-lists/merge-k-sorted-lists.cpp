@@ -84,7 +84,7 @@ public:
     ListNode* mergeKLists(vector<ListNode*>& lists) 
     {
 		min_heap h;
-		for (const auto p : lists)
+		for (auto p : lists)
 		{
 			if (p)
 				h.insertToHeap(p);
@@ -93,12 +93,11 @@ public:
 		ListNode* temp = newHead;
 		while (!h.isEmpty())
 		{
-			ListNode* smallest = h.peekMin();
-			temp->next = smallest;
+			temp->next = h.peekMin();
 			temp = temp->next;
 			h.popFromHeap();
-			if (smallest->next)
-				h.insertToHeap(smallest->next);
+			if (temp->next)
+				h.insertToHeap(temp->next);
 		}
 		newHead = newHead->next;
 		return newHead;
