@@ -14,15 +14,8 @@ class Solution
 public:
 	int maxDepth(TreeNode* root)
 	{
-		return depth(root, 0);
-	}
-
-	int depth(TreeNode* root, int deep)
-	{
-		if (root == nullptr)
-			return deep;
-		int leftHeight = depth(root->left, deep+1);
-		int rightHeight = depth(root->right, deep+1);
-		return (leftHeight > rightHeight ? leftHeight : rightHeight);
+        if (root == nullptr)
+            return 0;
+        return max(maxDepth(root->left), maxDepth(root->right)) + 1;
 	}
 };
