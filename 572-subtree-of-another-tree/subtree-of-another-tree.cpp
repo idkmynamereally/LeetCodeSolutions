@@ -10,7 +10,7 @@ public:
             return true;
         if (isSubtree(root->right, subRoot))
             return true;
-        return (isSameTree(root->left, subRoot) || isSameTree(root->right, subRoot) || isSameTree(root, subRoot));
+        return isSameTree(root, subRoot);
     }
 
     bool isSameTree(TreeNode* p, TreeNode* q) 
