@@ -6,11 +6,7 @@ public:
     {
         if (root == nullptr)
             return root == subRoot;
-        if (isSubtree(root->left, subRoot))
-            return true;
-        if (isSubtree(root->right, subRoot))
-            return true;
-        return isSameTree(root, subRoot);
+        return (isSameTree(root, subRoot) || isSubtree(root->right, subRoot) || isSubtree(root->left, subRoot));
     }
 
     bool isSameTree(TreeNode* p, TreeNode* q) 
