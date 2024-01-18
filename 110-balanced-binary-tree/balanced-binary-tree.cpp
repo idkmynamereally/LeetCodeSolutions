@@ -1,30 +1,34 @@
+
 class Solution 
 {
 public:
-    bool isBalanced(TreeNode* root) 
+    bool isBalanced(TreeNode* root)     //<Balanced?, Height of subtree> 
     {
-        if (root == nullptr)
-            return true;
-
-        if (isBalanced(root->left) == false)
-            return false;
-        if (isBalanced(root->right) == false)
-            return false;
-        int leftTreeH = depthOfTree(root->left);
-        int rightTreeH = depthOfTree(root->right);
-        int diff = leftTreeH - rightTreeH;
-        if (diff >= -1 && diff <= 1)
-            return true;
-        return false;
+        return isNodeBalanced(root).first;
     }
 
-    int depthOfTree(TreeNode* root)
+    std::pair<bool, int> isNodeBalanced(TreeNode* node)
+    {
+        if (node == nullptr)
+            return std::pair<bool, int>(true, 0);
+
+        auto leftTree = isNodeBalanced(node->left);
+        auto rightTree = isNodeBalanced(node->right);
+
+        int leftH = leftTree.second + 1;
+        int rightH = rightTree.second + 1;
+
+        if (leftTree.first && rightTree.first && abs(rightH - leftH) <= 1)
+            return std::pair<bool, int>(true, max(leftH, rightH));
+        else
+            return std::pair<bool, int>(false, max(leftH, rightH));
+        return std::pair<bool, int>(false, max(leftH, rightH));
+    }
+
+    bool depthOfTree(TreeNode* root)
     {
         if (root == nullptr)
             return 0;
-        int leftTree = depthOfTree(root->left);
-        int rightTree = depthOfTree(root->right);
-
-        return 1 + (max(leftTree, rightTree));
+        return max(depthOfTree(root->left), depthOfTree(root->right)) + 1;
     }
 };
