@@ -1,32 +1,30 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) 
     {
+        //BFS Time
         std::vector<std::vector<int>> v;
-        recLevelOrder(root, 0, v);
-        return v;
-    }
-
-    void recLevelOrder(TreeNode* root, int level, std::vector<std::vector<int>>& v)
-    {
         if (root == nullptr)
-            return;
-        if (v.size() <= level)
-            v.push_back(std::vector<int>());
-        v[level].push_back(root->val);
-        recLevelOrder(root->left, level + 1, v);
-        recLevelOrder(root->right, level + 1, v);
+            return v;
+        std::queue<TreeNode*> que;
+        que.push(root);
+        
+        while (!que.empty())
+        {
+            int ogSize = que.size();
+            std::vector<int> currSubList;
+            for (int i = 0; i < ogSize; i++)
+            {
+                TreeNode* temp = que.front();
+                if (temp->left)
+                    que.push(temp->left);
+                if (temp->right)
+                    que.push(temp->right);
+                que.pop();
+                currSubList.push_back(temp->val);
+            }
+            v.push_back(currSubList);
+        }
+        return v;
     }
 };
