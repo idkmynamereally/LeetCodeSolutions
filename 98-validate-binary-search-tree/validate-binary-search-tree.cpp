@@ -3,29 +3,18 @@ class Solution
 public:
     bool isValidBST(TreeNode* root)
     {
-        if (root == nullptr)
-            return true;
-
-        if (!(checkLeftSubTree(root, root->left) && checkRightSubTree(root, root->right)))
-            return false;
-        
-        return isValidBST(root->left) && isValidBST(root->right);
+        long long int mx = (long long int)INT_MAX + 1;
+        long long int mn = (long long int)INT_MIN - 1;
+        //std::cout << mx;
+        return checkBST(mn, mx, root);
     }
 
-    bool checkLeftSubTree(TreeNode* ogRoot, TreeNode* node)
+    bool checkBST(long long int min, long long int max, TreeNode* node)
     {
         if (node == nullptr)
             return true;
-        if (node->val >= ogRoot->val)
+        if (!(node->val > min && node->val < max))
             return false;
-        return checkLeftSubTree(ogRoot, node->left) && checkLeftSubTree(ogRoot, node->right);
-    }
-    bool checkRightSubTree(TreeNode* ogRoot, TreeNode* node)
-    {
-        if (node == nullptr)
-            return true;
-        if (node->val <= ogRoot->val)
-            return false;
-        return checkRightSubTree(ogRoot, node->left) && checkRightSubTree(ogRoot, node->right);
+        return (checkBST(min, node->val, node->left) && checkBST(node->val, max, node->right));
     }
 };
