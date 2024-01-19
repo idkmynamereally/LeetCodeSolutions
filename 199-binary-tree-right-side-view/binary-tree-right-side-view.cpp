@@ -20,12 +20,9 @@ public:
                     que.push(temp->left);
                 if (temp->right)
                     que.push(temp->right);
-                if (i == (ogSize - 1))
-                {
-                    v.push_back(temp->val);
-                }
                 que.pop();
             }
+            v.push_back(temp->val);
         }
         return v;
     }
