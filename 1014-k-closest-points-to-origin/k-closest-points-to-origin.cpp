@@ -5,7 +5,6 @@ public:
     {
         double distanceA = sqrt((double)a[0] * a[0] + a[1] * a[1]);
         double distanceB = sqrt((double)b[0] * b[0] + b[1] * b[1]);
-
         return distanceA < distanceB;
     }
 };
@@ -19,9 +18,8 @@ public:
         std::priority_queue<std::vector<int>, std::vector<std::vector<int>>, fartherFromOrigin> maxHeap;
         
         for (const auto& p : points)
-        {
             maxHeap.push(p);
-        }
+
         while (maxHeap.size() > k)
             maxHeap.pop();
 
