@@ -26,7 +26,7 @@ public:
         return ans;
     }
 
-    void recurse(TreeNode* root, std::unordered_map<int, int> map, int count, int& ans)
+    void recurse(TreeNode* root, std::unordered_map<int, int>& map, int count, int& ans)
     {
         if (!root)
             return;
@@ -43,5 +43,6 @@ public:
             recurse(root->left, map, count, ans);
         if (root->right)
             recurse(root->right, map, count, ans);
+        map[root->val]--;
     }
 };
