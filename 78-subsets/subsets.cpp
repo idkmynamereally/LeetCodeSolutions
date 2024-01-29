@@ -9,7 +9,7 @@ public:
         return ans;
     }
 
-    void helper(std::vector<std::vector<int>>& ans, std::vector<int> curr, std::vector<int>& nums, int indexOfNextItem)
+    void helper(std::vector<std::vector<int>>& ans, std::vector<int>& curr, std::vector<int>& nums, int indexOfNextItem)
     {
         if (indexOfNextItem == nums.size())
         {
@@ -20,5 +20,6 @@ public:
         helper(ans, curr, nums, indexOfNextItem + 1);
         curr.push_back(nums[indexOfNextItem]);
         helper(ans, curr, nums, indexOfNextItem + 1);
+        curr.pop_back();
     }
 };
