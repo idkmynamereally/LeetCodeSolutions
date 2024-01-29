@@ -10,13 +10,14 @@ public:
         return ans;
     }
 
-    void helper(vector<vector<int>>& ans, vector<int>& nums, vector<int> curr, int lastAddedIndex, int target, int currSum)
+    void helper(vector<vector<int>>& ans, vector<int>& nums, vector<int>& curr, int lastAddedIndex, int target, int currSum)
     {
         curr.push_back(nums[lastAddedIndex]);
         currSum += nums[lastAddedIndex];
         if (currSum == target)
         {
             ans.push_back(curr);
+            curr.pop_back();
             return;
         }
         for (int i = lastAddedIndex; i < nums.size(); i++)
@@ -25,5 +26,6 @@ public:
                 continue;
             helper(ans, nums, curr, i, target, currSum);
         }
+        curr.pop_back();
     }
 };
