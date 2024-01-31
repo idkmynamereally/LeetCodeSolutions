@@ -20,10 +20,10 @@ public:
             return;
         }
 
-        helper(ans, nums, curr, currIndex + 1, target, currSum);
-
         curr.push_back(nums[currIndex]);
         helper(ans, nums, curr, currIndex, target, currSum + nums[currIndex]);
         curr.pop_back();
+
+        helper(ans, nums, curr, currIndex + 1, target, currSum);
     }
 };
