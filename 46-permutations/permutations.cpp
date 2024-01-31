@@ -4,29 +4,22 @@ public:
     vector<vector<int>> permute(vector<int>& nums) 
     {
         vector<vector<int>> ans;
-        std::unordered_set<int> set;
-        std::vector<int> curr;
-        helper(curr, ans, nums, set);
+        helper(ans, nums, 0);
         return ans;
     }
 
-    void helper(std::vector<int>& curr, std::vector<std::vector<int>>& ans, std::vector<int>& nums, std::unordered_set<int>& set)
+    void helper(vector<vector<int>>& ans, vector<int>& nums, int currIndex)
     {
-        if (curr.size() == nums.size())
+        if (currIndex == nums.size())
         {
-            ans.push_back(curr);
-            return;
+            ans.push_back(nums);
         }
 
-        for (int i = 0; i < nums.size(); i++)
+        for (int i = currIndex; i < nums.size(); i++)
         {
-            if (set.contains(nums[i]))
-                continue;
-            curr.push_back(nums[i]);
-            set.insert(nums[i]);
-            helper(curr, ans, nums, set);
-            curr.pop_back();
-            set.erase(nums[i]);
+            std::swap(nums[i], nums[currIndex]);
+            helper(ans, nums, currIndex + 1);
+            std::swap(nums[i], nums[currIndex]);
         }
     }
 };
