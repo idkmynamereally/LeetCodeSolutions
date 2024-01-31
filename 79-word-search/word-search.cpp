@@ -24,16 +24,11 @@ public:
         if (charIndex == word.size())
             return true;
 
-        int leftLimit = 0;
-        int upLimit = 0;
-        int rightLimit = board[0].size();
-        int downLimit = board.size();
-
         int row = curr.first;
         int col = curr.second;
-        if (row < upLimit || row >= downLimit)
+        if (row < 0 || row >= board.size())
             return false;
-        if (col < leftLimit || col >= rightLimit)
+        if (col < 0 || col >= board[0].size())
             return false;
 
         bool left = false;
