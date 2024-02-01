@@ -13,16 +13,15 @@ public:
             return ans;
         }
         for (int i = 0; i < s.size(); i++)
-            helper(ans, curr, 0, i+1, s);
+            helper(ans, curr, 0, i + 1, s);
         return ans;
     }
 
-    void helper(vector<vector<string>>& ans, vector<string> curr, int currIndex, int remIndex, string_view s)
+    void helper(vector<vector<string>>& ans, vector<string>& curr, int currIndex, int remIndex, string_view s)
     {
         string currPartString = string(s.substr(currIndex, remIndex - currIndex));
         if (isPalindrome(0, currPartString.size() - 1, currPartString))
         {
-            //std::cout << currPartString << "\n";
             curr.push_back(currPartString);
 
             if (remIndex == s.size())
@@ -32,6 +31,7 @@ public:
             {
                 helper(ans, curr, remIndex, i, s);
             }
+            curr.pop_back();
         }
     }
 
