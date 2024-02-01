@@ -6,19 +6,12 @@ public:
         if (digits.size() == 0)
             return ans;
         string curr;
-        unordered_map<char, string> phone;
-        string arr[8]{"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        char c = '1';
-        for (int i = 0; i < 8; i++)
-        {
-            c++;
-            phone[c] = arr[i];
-        }
+        vector<string> phone{"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         helper(ans, curr, 0, phone, digits);
         return ans;
     }
 
-    void helper(vector<string>& ans, string& curr, int currIndex, unordered_map<char, string>& phone, string_view digits)
+    void helper(vector<string>& ans, string& curr, int currIndex, vector<string>& phone, string_view digits)
     {
         if (currIndex == digits.size())
         {
@@ -26,7 +19,7 @@ public:
             return;
         }
 
-        string chars = phone[digits.at(currIndex)];
+        string chars = phone[digits.at(currIndex) - '0' - 2];
         for (char c : chars)
         {
             curr.push_back(c);
