@@ -13,12 +13,8 @@ public:
             }
             nums[i] = max;
         }
-        int ans {0};
-        for (int i = 0; i < nums.size(); i++)
-        {
-            if (nums[i] > ans)
-                ans = nums[i];
-        }
-        return ans;
+        if (nums.size() == 1)
+            return nums[0];
+        return max(nums[0], nums[1]);
     }
 };
