@@ -3,54 +3,46 @@ class Solution
 public:
     int coinChange(vector<int>& coins, int amount)
     {
-        if (amount == 0)
-            return 0;
-        int ans = INT_MAX;
-        unordered_map<int, unordered_map<int, int>> map;    //<amount, <index, coins>>
-
-        for (int i = 0; i < coins.size(); i++)
-        {
-            int temp = recurse(coins, amount, i, map);
-            if (temp == -1)
-                continue;
-            if (temp < ans)
-                ans = temp;
-        }
-        int count = 0;
-        if (ans == INT_MAX)
-            return -1;
-        return ans;
+        unordered_map<int, unordered_map<int, int>> map;
+        return recurse(coins, amount, 0, map);
     }
 
     int recurse(vector<int>& coins, int amount, int currIndex, unordered_map<int, unordered_map<int, int>>& map)
     {
-        //std::cout << "CurrElemenet : " << coins[currIndex] << " Amount : " << amount << "\n";
         if (map.contains(amount))
         {
             if (map[amount].contains(currIndex))
-                return (map[amount])[currIndex];
+                return map[amount][currIndex];
         }
-        if (amount == coins[currIndex])
-            return 1;
-        if (amount < coins[currIndex])
+        if (currIndex >= coins.size())
+            return -1;
+        if (amount == 0)
+            return 0;
+        if (amount < 0)
             return -1;
 
-        amount -= coins[currIndex];
-
-        int min = INT_MAX;
-        for (int i = currIndex; i < coins.size(); i++)
+        int temp1 = recurse(coins, amount - coins[currIndex], currIndex, map);
+        int temp2 = recurse(coins, amount, currIndex + 1, map);
+        int ans{-1};
+        
+        if (temp1 == -1 && temp2 == -1)
         {
-            int temp = recurse(coins, amount, i, map);
-            if (temp == -1)
-                continue;
-            min = temp < min ? temp : min;
+            map[amount][currIndex] = -1;
         }
-        if (min == INT_MAX)
+        else if (temp1 == -1)
         {
-            (map[amount])[currIndex] = -1;
-            return -1;
+            map[amount][currIndex] = temp2;
         }
-        (map[amount])[currIndex] = min;
-        return min + 1;
+        else if (temp2 == -1)
+        {
+            temp1++;
+            map[amount][currIndex] = temp1;
+        }
+        else
+        {
+            temp1++;
+            map[amount][currIndex] = (temp1 < temp2 ? temp1 : temp2);
+        }
+        return map[amount][currIndex];
     }
 };
