@@ -11,18 +11,14 @@ public:
 
         for (int i = 1; i < nums.size(); i++)
         {
-            int curr = nums[i];
-            int lastMin = minMul[i - 1];
-            int lastMax = maxMul[i - 1];
-
-            int c1 = lastMin * curr;
-            int c2 = lastMax * curr;
+            int c1 = minMul[i - 1] * nums[i];
+            int c2 = maxMul[i - 1] * nums[i];
             
             minMul[i] = (c1 < c2 ? c1 : c2);
-            minMul[i] = curr < minMul[i] ? curr : minMul[i];
+            minMul[i] = nums[i] < minMul[i] ? nums[i] : minMul[i];
 
             maxMul[i] = (c1 > c2 ? c1 : c2);
-            maxMul[i] = curr > maxMul[i] ? curr : maxMul[i];
+            maxMul[i] = nums[i] > maxMul[i] ? nums[i] : maxMul[i];
         }
 
         int ans = INT_MIN;
