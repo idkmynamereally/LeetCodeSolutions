@@ -3,46 +3,33 @@ class Solution
 public:
     bool wordBreak(string s, vector<string>& wordDict)
     {
-        unordered_map<string, unordered_map<int, bool>> map;
-        for (int i = 0; i < wordDict.size(); i++)
+        vector<bool> arr(s.size() + 1, false);
+        arr[s.size()] = true;
+        for (int sIndex = s.size(); sIndex >= 0; sIndex--)
         {
-            if (recurse(s, i, wordDict, map))
-                return true;
-        }
-        return false;
-    }
-
-    bool recurse(string_view s, int wordIndex, vector<string>& wordDict, unordered_map<string, unordered_map<int, bool>>& map)
-    {
-        string s1 = string(s);
-        if (map.contains(s1))
-        {
-            if (map[s1].contains(wordIndex))
-                return map[s1][wordIndex];
-        }
-        if (s == "")
-        {
-            map[s1][wordIndex] = true;
-            return true;
-        }
-
-        if (wordDict[wordIndex].size() > s.size())
-        {
-            map[s1][wordIndex] = false;
-            return false;
-        }
-
-        if (wordDict[wordIndex] == s.substr(0, wordDict[wordIndex].size()))
-        {
-            auto leftString = s.substr(wordDict[wordIndex].size(), s.size() - wordDict[wordIndex].size());
-            for (int i = 0; i < wordDict.size(); i++)
+            for (int wIndex = 0; wIndex < wordDict.size(); wIndex++)
             {
-                //std::cout << wordDict[i] << " " << leftString << "\n";
-                if (recurse(leftString, i, wordDict, map))
-                    return true;
+                if (arr[sIndex])
+                    break;
+                recurse(s, sIndex, wIndex, wordDict, arr);
             }
         }
-        map[s1][wordIndex] = false;
-        return false;
+        return arr[0];
+    }
+
+    void recurse(string_view s, int currIndex, int wordIndex, vector<string>& wordDict, vector<bool>& arr)
+    {
+        std::cout << wordDict[wordIndex] << " " << s.substr(currIndex, s.size() - currIndex) << "\n";
+        if (wordDict[wordIndex].size() > (s.size() - currIndex))
+        {
+            arr[currIndex] = false;
+            return;
+        }
+
+        string_view s1 = s.substr(currIndex, wordDict[wordIndex].size());
+        if (s1 == wordDict[wordIndex])
+        {
+            arr[currIndex] = arr[currIndex + wordDict[wordIndex].size()];
+        }
     }
 };
