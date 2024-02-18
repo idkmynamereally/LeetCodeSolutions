@@ -18,7 +18,7 @@ public:
     {
         if (target < 0)
             return false;
-
+        
         if (target == 0)
             return true;
 
