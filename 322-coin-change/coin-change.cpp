@@ -4,12 +4,12 @@ public:
     int coinChange(vector<int>& coins, int amount)
     {
         unordered_map<int, int> dp;
-        int ans = recurse(coins, amount, 0, dp);
+        int ans = recurse(coins, amount, dp);
         ans = (ans == INT_MAX) ? -1 : ans;
         return ans;
     }
 
-    int recurse(vector<int>& nums, int target, int currIndex, unordered_map<int, int>& dp)
+    int recurse(vector<int>& nums, int target, unordered_map<int, int>& dp)
     {
         if (dp.contains(target))
             return dp[target];
@@ -21,7 +21,7 @@ public:
         int min = INT_MAX;
         for (int i = 0; i < nums.size(); i++)
         {
-            int ans = recurse(nums, target - nums[i], i, dp);
+            int ans = recurse(nums, target - nums[i], dp);
             if (ans != INT_MAX)
             {
                 ans++;
