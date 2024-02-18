@@ -3,7 +3,7 @@ class Solution
 public:
     bool canPartition(vector<int>& nums)
     {
-        unordered_map<int, unordered_map<int, bool>> map;   //<Target, <currIndex, result>>
+        unordered_map<int, unordered_map<int, bool>> map;   //<currIndex, <target, result>>
         int sum{ 0 };
         for (int i : nums)
             sum += i;
@@ -15,29 +15,37 @@ public:
 
     bool recurse(vector<int>& nums, int currIndex, int target, unordered_map<int, unordered_map<int, bool>>& map)
     {
+        if (map.contains(currIndex))
+        {
+            if (map[currIndex].contains(target))
+                return map[currIndex][target];
+        }
+
+        if (target == 0)
+        {
+            map[currIndex][target] = true;
+            return true;
+        }
+
         if (currIndex == nums.size())
         {
+            map[currIndex][target] = false;
             return false;
         }
-        if (map.contains(target))
-        {
-            if (map[target].contains(currIndex))
-                return map[target][currIndex];
-        }
 
-        if (nums[currIndex] == target)
-        {
-            map[target][currIndex] = true;
-            return true;
-        }
-        
         if (recurse(nums, currIndex + 1, target - nums[currIndex], map))
+        {
+            map[currIndex][target] = true;
             return true;
-
+        }
         if (recurse(nums, currIndex + 1, target, map))
+        {
+            map[currIndex][target] = true;
             return true;
+        }
 
-        map[target][currIndex] = false;
-        return false;
+        map[currIndex][target] = false;
+
+        return map[currIndex][target];
     }
 };
