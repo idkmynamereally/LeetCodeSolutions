@@ -3,46 +3,32 @@ class Solution
 public:
     int coinChange(vector<int>& coins, int amount)
     {
-        unordered_map<int, unordered_map<int, int>> map;
-        return recurse(coins, amount, 0, map);
+        unordered_map<int, int> dp;
+        int ans = recurse(coins, amount, 0, dp);
+        ans = (ans == INT_MAX) ? -1 : ans;
+        return ans;
     }
 
-    int recurse(vector<int>& coins, int amount, int currIndex, unordered_map<int, unordered_map<int, int>>& map)
+    int recurse(vector<int>& nums, int target, int currIndex, unordered_map<int, int>& dp)
     {
-        if (map.contains(amount))
-        {
-            if (map[amount].contains(currIndex))
-                return map[amount][currIndex];
-        }
-        if (currIndex >= coins.size())
-            return -1;
-        if (amount == 0)
+        if (dp.contains(target))
+            return dp[target];
+        if (target == 0)
             return 0;
-        if (amount < 0)
-            return -1;
+        if (target < 0)
+            return INT_MAX;
 
-        int temp1 = recurse(coins, amount - coins[currIndex], currIndex, map);
-        int temp2 = recurse(coins, amount, currIndex + 1, map);
-        int ans{-1};
-        
-        if (temp1 == -1 && temp2 == -1)
+        int min = INT_MAX;
+        for (int i = 0; i < nums.size(); i++)
         {
-            map[amount][currIndex] = -1;
+            int ans = recurse(nums, target - nums[i], i, dp);
+            if (ans != INT_MAX)
+            {
+                ans++;
+                min = min < ans ? min : ans;
+            }
         }
-        else if (temp1 == -1)
-        {
-            map[amount][currIndex] = temp2;
-        }
-        else if (temp2 == -1)
-        {
-            temp1++;
-            map[amount][currIndex] = temp1;
-        }
-        else
-        {
-            temp1++;
-            map[amount][currIndex] = (temp1 < temp2 ? temp1 : temp2);
-        }
-        return map[amount][currIndex];
+        dp[target] = min;
+        return min;
     }
 };
