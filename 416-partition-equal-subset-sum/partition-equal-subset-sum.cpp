@@ -3,49 +3,34 @@ class Solution
 public:
     bool canPartition(vector<int>& nums)
     {
-        unordered_map<int, unordered_map<int, bool>> map;   //<currIndex, <target, result>>
         int sum{ 0 };
         for (int i : nums)
             sum += i;
 
         if (sum % 2 != 0)
             return false;
-        return recurse(nums, 0, sum / 2, map);
+
+        vector<vector<int>> dp(nums.size(), vector<int>(sum/2 + 1, -1)); 
+        return recurse(nums, 0, sum / 2, dp);
     }
 
-    bool recurse(vector<int>& nums, int currIndex, int target, unordered_map<int, unordered_map<int, bool>>& map)
+    bool recurse(vector<int>& nums, int currIndex, int target, vector<vector<int>>& dp)
     {
-        if (map.contains(currIndex))
-        {
-            if (map[currIndex].contains(target))
-                return map[currIndex][target];
-        }
+        if (target < 0)
+            return false;
 
         if (target == 0)
-        {
-            map[currIndex][target] = true;
             return true;
-        }
 
         if (currIndex == nums.size())
-        {
-            map[currIndex][target] = false;
             return false;
-        }
 
-        if (recurse(nums, currIndex + 1, target - nums[currIndex], map))
-        {
-            map[currIndex][target] = true;
-            return true;
-        }
-        if (recurse(nums, currIndex + 1, target, map))
-        {
-            map[currIndex][target] = true;
-            return true;
-        }
+        if (dp[currIndex][target] != -1)
+            return dp[currIndex][target];
 
-        map[currIndex][target] = false;
+        bool inc = recurse(nums, currIndex + 1, target - nums[currIndex], dp);
+        bool exc = recurse(nums, currIndex + 1, target, dp);
 
-        return map[currIndex][target];
+        return dp[currIndex][target] = inc || exc;
     }
 };
