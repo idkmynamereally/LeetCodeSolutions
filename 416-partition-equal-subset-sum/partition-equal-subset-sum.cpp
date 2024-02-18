@@ -28,9 +28,16 @@ public:
         if (dp[currIndex][target] != -1)
             return dp[currIndex][target];
 
-        bool inc = recurse(nums, currIndex + 1, target - nums[currIndex], dp);
-        bool exc = recurse(nums, currIndex + 1, target, dp);
-
-        return dp[currIndex][target] = inc || exc;
+        if (recurse(nums, currIndex + 1, target - nums[currIndex], dp))
+        {
+            dp[currIndex][target] = true;
+            return true;
+        }
+        if (recurse(nums, currIndex + 1, target, dp))
+        {
+            dp[currIndex][target] = true;
+            return true;
+        }
+        return dp[currIndex][target] = false;
     }
 };
