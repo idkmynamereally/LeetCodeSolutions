@@ -4,10 +4,18 @@ public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost)
     {
         vector<int> affect(gas.size(), 0);
+        int gasT = 0;
+        int costT = 0;
         for (int i = 0; i < affect.size(); i++)
         {
+            gasT += gas[i];
+            costT += cost[i];
             affect[i] = gas[i] - cost[i];
         }
+
+        if (gasT < costT)
+            return -1;
+
         int l = 0;
         int r = 0;
         int ans = 0;
