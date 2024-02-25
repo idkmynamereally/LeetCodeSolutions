@@ -3,6 +3,9 @@ class Solution
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost)
     {
+        ios::sync_with_stdio(0);
+        cin.tie(0);
+        cout.tie(0);
         vector<int> affect(gas.size(), 0);
         int gasT = 0;
         int costT = 0;
