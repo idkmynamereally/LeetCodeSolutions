@@ -16,8 +16,7 @@ public:
         int prev = -1;
         for (int i = 0; i < s.size(); i++)
         {
-            char c = s[i];
-            end = end > m[c - 'a'] ? end : m[c - 'a'];
+            end = end > m[s[i] - 'a'] ? end : m[s[i] - 'a'];
             if (i == end)
             {
                 ans.push_back(end - prev);
