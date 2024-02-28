@@ -19,7 +19,9 @@ public:
                 p2 = true;
             if (triplets[i][2] == target[2])
                 p3 = true;
+            if (p1 && p2 && p3)
+                return true;
         }
-        return (p1 && p2 && p3);
+        return false;
     }
 };
