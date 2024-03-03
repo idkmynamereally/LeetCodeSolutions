@@ -7,7 +7,6 @@ public:
         int openCount = 0;
         for (char c : s)
         {
-            //std::cout << c << openCount << " " << starCount << "\n";
             if (c == '(')
                 openCount++;
             else if (c == '*')
@@ -31,7 +30,7 @@ public:
         }
         if (openCount <= 0)
             return true;
-
+        
         int closeCount = 0;
         starCount = 0;
         for (int i = s.size() - 1; i >= 0; i--)
