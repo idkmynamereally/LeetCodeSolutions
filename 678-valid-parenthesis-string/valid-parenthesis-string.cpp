@@ -7,7 +7,7 @@ public:
         int openCount = 0;
         for (char c : s)
         {
-            std::cout << c << openCount << " " << starCount << "\n";
+            //std::cout << c << openCount << " " << starCount << "\n";
             if (c == '(')
                 openCount++;
             else if (c == '*')
