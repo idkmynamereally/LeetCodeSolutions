@@ -28,11 +28,10 @@ public:
         int area = 1;
         grid[r][c] = 0;
 
-        area += maxArea(r, c - 1, grid);
-        area += maxArea(r + 1, c, grid);
-        area += maxArea(r, c + 1, grid);
-        area += maxArea(r - 1, c, grid);
-
+        area = area + maxArea(r, c - 1, grid);
+        area = area + maxArea(r + 1, c, grid);
+        area = area + maxArea(r, c + 1, grid);
+        area = area + maxArea(r - 1, c, grid);
 
         return area;
     }
