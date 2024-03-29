@@ -19,7 +19,7 @@ public:
 
     int maxArea(int r, int c, vector<vector<int>>& grid)
     {
-        if (r == grid.size() || r == -1 || c == -1 || c == grid[0].size())
+        if (r == grid.size() || r < 0 || c < 0 || c == grid[0].size())
             return 0;
 
         if (grid[r][c] == 0)
