@@ -8,11 +8,8 @@ public:
         {
             for (int j = 0; j < grid[0].size(); j++)
             {
-                if (grid[i][j] == 1)
-                {
-                    int temp = maxArea(i, j, grid);
-                    ans = ans > temp ? ans : temp;
-                }
+                int temp = maxArea(i, j, grid);
+                ans = ans > temp ? ans : temp;
             }
         }
         return ans;
