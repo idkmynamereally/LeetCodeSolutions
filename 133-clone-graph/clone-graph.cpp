@@ -7,25 +7,19 @@ public:
             return nullptr;
 
         unordered_map<Node*, Node*> map;
-        unordered_set<Node*> visited;
-        dfs(node, visited, map);
+        dfs(node, map);
         return map[node];
     }
 
-    void dfs(Node* node, unordered_set<Node*>& visited, unordered_map<Node*, Node*>& map)
+    void dfs(Node* node, unordered_map<Node*, Node*>& map)
     {
-        if (visited.contains(node))
-            return;
-        
-        visited.insert(node);
-
         map[node] = new Node(node->val);
         Node* currNode = map[node];
 
         for (auto n : node->neighbors)
         {
             if (!map.contains(n))
-                dfs(n, visited, map);
+                dfs(n, map);
             currNode->neighbors.push_back(map[n]);
         }
     }
