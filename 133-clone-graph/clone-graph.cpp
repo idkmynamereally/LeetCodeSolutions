@@ -24,7 +24,8 @@ public:
 
         for (auto n : node->neighbors)
         {
-            dfs(n, visited, map);
+            if (!map.contains(n))
+                dfs(n, visited, map);
             currNode->neighbors.push_back(map[n]);
         }
     }
