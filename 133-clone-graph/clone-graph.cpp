@@ -19,8 +19,7 @@ public:
         
         visited.insert(node);
 
-        if (!map.contains(node))
-            map[node] = new Node(node->val);
+        map[node] = new Node(node->val);
         Node* currNode = map[node];
 
         for (auto n : node->neighbors)
