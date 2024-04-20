@@ -6,25 +6,21 @@ public:
         int r = grid.size();
         int c = grid[0].size();
 
-        vector<vector<int>> ans(r, vector<int>(c, INT_MAX));
-        recurse(0, 0, 0, grid, ans);
+        //vector<vector<int>> dp(r, vector<int>(c, 0));
 
-        return ans[r - 1][c - 1];
-    }
-
-    void recurse(int r, int c, int dist, vector<vector<int>>& grid, vector<vector<int>>& ans)
-    {
-        if (r < 0 || r >= grid.size())
-            return;
-        if (c < 0 || c >= grid[0].size())
-            return;
-
-        if ((dist + grid[r][c]) < ans[r][c])
-            ans[r][c] = dist + grid[r][c];
-        else
-            return;
-
-        recurse(r + 1, c, ans[r][c], grid, ans);
-        recurse(r, c + 1, ans[r][c], grid, ans);
+        for (int i = 1; i < c; i++)
+            grid[0][i] = grid[0][i - 1] + grid[0][i];
+        for (int i = 1; i < r; i++)
+            grid[i][0] = grid[i - 1][0] + grid[i][0];
+        
+        for (int i = 1; i < r; i++)
+        {
+            for (int j = 1; j < c; j++)
+            {
+                int a = grid[i - 1][j] < grid[i][j - 1] ? grid[i - 1][j] : grid[i][j - 1];
+                grid[i][j] += a;
+            }
+        }
+        return grid[r - 1][c - 1];
     }
 };
