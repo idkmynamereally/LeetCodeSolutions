@@ -7,7 +7,7 @@ public:
         ListNode* temp = head;
 
         while (temp) {
-            s += to_string(temp->val);
+            s.append(to_string(temp->val));
             temp = temp->next;
         }
 
