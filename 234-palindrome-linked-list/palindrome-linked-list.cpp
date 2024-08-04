@@ -3,22 +3,20 @@ class Solution
 public:
     bool isPalindrome(ListNode* head)
     {
-        string s;
+        vector<int> arr;
         ListNode* temp = head;
 
         while (temp) {
-            s.append(to_string(temp->val));
+            arr.push_back(temp->val);
             temp = temp->next;
         }
 
         int l = 0;
-        int r = s.size() - 1;
+        int r = arr.size() - 1;
 
         while (l < r) {
-            if (s[l] != s[r])
+            if (arr[l++] != arr[r--])
                 return false;
-            l++;
-            r--;
         }
         return true;
     }
