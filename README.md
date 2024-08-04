@@ -24,4 +24,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0062-unique-paths) |
+## Linked List
+|  |
+| ------- |
+| [0025-reverse-nodes-in-k-group](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0025-reverse-nodes-in-k-group) |
+## Recursion
+|  |
+| ------- |
+| [0025-reverse-nodes-in-k-group](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0025-reverse-nodes-in-k-group) |
 <!---LeetCode Topics End-->
