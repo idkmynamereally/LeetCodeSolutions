@@ -1,15 +1,16 @@
-class Solution
-{
+class Solution {
 public:
-    int minCostClimbingStairs(vector<int>& cost) 
-    {
-        unordered_map<int, int> map;
-        for (int i = cost.size() - 3; i >= 0; i--)
-        {
-            cost[i] += min(cost[i + 1], cost[i + 2]);
-        }
-        return min(cost[0], cost[1]);
-    }
+    int minCostClimbingStairs(vector<int>& cost) {
+        int n = cost.size();
+        vector<int> dp(n + 1, 0);
+        dp[n] = 0;
+        dp[n - 1] = cost[n - 1];
+        dp[n - 2] = cost[n - 2];
 
-    //cost of going from stair i to end = min(map[i + 1], map[i + 2])
+        for (int i = n - 3; i >= 0; i--) {
+            dp[i] = min(dp[i + 1], dp[i + 2]) + cost[i];
+        }
+
+        return (min(dp[0], dp[1]));
+    }
 };
