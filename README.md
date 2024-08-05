@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0747-min-cost-climbing-stairs](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0747-min-cost-climbing-stairs) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
+| [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -49,4 +50,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1250-longest-common-subsequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1250-longest-common-subsequence) |
+| [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
+## Hash Table
+|  |
+| ------- |
+| [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
+## Counting
+|  |
+| ------- |
+| [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
 <!---LeetCode Topics End-->
