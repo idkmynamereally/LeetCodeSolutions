@@ -6,11 +6,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0747-min-cost-climbing-stairs](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0747-min-cost-climbing-stairs) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0062-unique-paths) |
+| [0747-min-cost-climbing-stairs](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0747-min-cost-climbing-stairs) |
 | [1250-longest-common-subsequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1250-longest-common-subsequence) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
 ## Binary Indexed Tree
