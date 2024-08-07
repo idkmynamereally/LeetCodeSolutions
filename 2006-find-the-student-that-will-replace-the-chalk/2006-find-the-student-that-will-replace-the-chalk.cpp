@@ -8,9 +8,7 @@ public:
         for (int i = 0; i < chalk.size(); i++)
             sum += chalk[i];
         
-        while (k > sum){
-            k -= sum;
-        }
+        k = k - ((k/sum) * sum);
 
         for (int i = 0; i < chalk.size(); i++)
         {
