@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0747-min-cost-climbing-stairs](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0747-min-cost-climbing-stairs) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Dynamic Programming
 |  |
@@ -70,4 +71,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
+## Binary Search
+|  |
+| ------- |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+## Simulation
+|  |
+| ------- |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
+## Prefix Sum
+|  |
+| ------- |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 <!---LeetCode Topics End-->
