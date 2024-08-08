@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0062-unique-paths) |
+| [0273-integer-to-english-words](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0273-integer-to-english-words) |
 ## Combinatorics
 |  |
 | ------- |
@@ -41,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0025-reverse-nodes-in-k-group) |
 | [0234-palindrome-linked-list](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0234-palindrome-linked-list) |
+| [0273-integer-to-english-words](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0273-integer-to-english-words) |
 ## Two Pointers
 |  |
 | ------- |
@@ -53,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0273-integer-to-english-words](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0273-integer-to-english-words) |
 | [1250-longest-common-subsequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1250-longest-common-subsequence) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
