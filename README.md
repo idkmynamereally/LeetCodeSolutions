@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0747-min-cost-climbing-stairs](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0747-min-cost-climbing-stairs) |
+| [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0921-spiral-matrix-iii) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -28,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0062-unique-paths](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0062-unique-paths) |
 | [0273-integer-to-english-words](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0273-integer-to-english-words) |
+| [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 ## Combinatorics
 |  |
 | ------- |
@@ -62,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Counting
@@ -95,5 +98,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0921-spiral-matrix-iii) |
 <!---LeetCode Topics End-->
