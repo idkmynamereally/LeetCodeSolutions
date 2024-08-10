@@ -57,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0014-longest-common-prefix) |
 | [0273-integer-to-english-words](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0273-integer-to-english-words) |
 | [1250-longest-common-subsequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1250-longest-common-subsequence) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
@@ -100,4 +101,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0921-spiral-matrix-iii) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
