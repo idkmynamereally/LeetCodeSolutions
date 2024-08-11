@@ -17,6 +17,6 @@ public:
         if (left->val != right->val)
             return false;
 
-        return (match(left->left, right->right) && match(left->right, right->left));
+        return match(left->left, right->right) && match(left->right, right->left);
     }
 };
