@@ -17,11 +17,6 @@ public:
         if (left->val != right->val)
             return false;
 
-        if (!match(left->left, right->right))
-            return false;
-        if (!match(left->right, right->left))
-            return false;
-
-        return true;
+        return (match(left->left, right->right) && match(left->right, right->left));
     }
 };
