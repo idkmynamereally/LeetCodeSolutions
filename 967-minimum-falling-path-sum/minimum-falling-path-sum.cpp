@@ -8,11 +8,11 @@ public:
             for (int j = 0; j < matrix.size(); j++)
             {
                 int ans = INT_MAX;
-                ans = min(ans, matrix[i][j] + matrix[i - 1][j]);
+                ans = ans < matrix[i][j] + matrix[i - 1][j] ? ans : matrix[i][j] + matrix[i - 1][j] ;
                 if (j - 1 >= 0)
-                    ans = min(ans, matrix[i][j] + matrix[i - 1][j - 1]);
+                    ans = ans < matrix[i][j] + matrix[i - 1][j - 1] ? ans : matrix[i][j] + matrix[i - 1][j - 1];
                 if (j + 1 < matrix.size())
-                    ans = min(ans, matrix[i][j] + matrix[i - 1][j + 1]);
+                    ans = ans < matrix[i][j] + matrix[i - 1][j + 1] ? ans : matrix[i][j] + matrix[i - 1][j + 1];
 
                 matrix[i][j] = ans;
             }
