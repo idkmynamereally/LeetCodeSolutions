@@ -19,7 +19,7 @@ public:
         }
         int ans = INT_MAX;
         for (int j = 0; j < matrix.size(); j++){
-            ans = min(ans, matrix[size - 1][j]);
+            ans = ans < matrix[size - 1][j] ? ans : matrix[size - 1][j];
         }
 
         return ans;
