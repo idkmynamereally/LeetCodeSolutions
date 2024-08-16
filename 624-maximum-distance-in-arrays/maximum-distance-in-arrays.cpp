@@ -2,6 +2,7 @@ class Solution {
 public:
     int maxDistance(vector<vector<int>>& arrays)
     {
+        ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         int min = arrays[0][0];
         int max = arrays[0][arrays[0].size() - 1];
         int ans = INT_MIN;
