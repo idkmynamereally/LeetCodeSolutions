@@ -29,7 +29,7 @@ public:
         dp[i][target] = false;
 
         if (target - nums[i] >= 0)
-            dp[i][target] |= recurse(nums, i + 1, target - nums[i], dp);
+            dp[i][target] = recurse(nums, i + 1, target - nums[i], dp);
         dp[i][target] |= recurse(nums, i + 1, target, dp);
         
         return dp[i][target];
