@@ -1,55 +1,43 @@
-class Solution {
+class Solution
+{
 public:
     bool canPartition(vector<int>& nums)
     {
-        int sum = 0;
-        for (int i = 0; i < nums.size(); i++)
-            sum += nums[i];
+        int sum{ 0 };
+        for (int i : nums)
+            sum += i;
 
-        if (sum % 2)
+        if (sum % 2 != 0)
             return false;
 
-        int target = sum/2;
-
-        vector<vector<int>> dp(nums.size() + 1, vector<int>(target + 1, false));
-
-        for (int i = 0; i < nums.size(); i++)
-        {
-            for (int j = 0; j < target; j++)
-            {
-                if (j == 0)
-                    dp[i][j] = true;
-            }
-        }
-
-        for (int i = nums.size() - 1; i >= 0; i--)
-        {
-            for (int t = 1; t <= target; t++)
-            {
-                if (t - nums[i] >= 0)
-                    dp[i][t] |= dp[i + 1][t - nums[i]];
-                dp[i][t] |= dp[i + 1][t];
-            }
-        }
-        return dp[0][target];
+        vector<vector<int>> dp(nums.size(), vector<int>(sum/2 + 1, -1)); 
+        return recurse(nums, 0, sum / 2, dp);
     }
 
-    bool recurse(vector<int>& nums, int i, int target, vector<vector<int>>& dp)
+    bool recurse(vector<int>& nums, int currIndex, int target, vector<vector<int>>& dp)
     {
+        if (target < 0)
+            return false;
+        
         if (target == 0)
             return true;
-        if (i == nums.size())
+
+        if (currIndex == nums.size())
             return false;
 
-        if (dp[i][target] != -1)
-            return dp[i][target];
+        if (dp[currIndex][target] != -1)
+            return dp[currIndex][target];
 
-        dp[i][target] = false;
-
-        if (target - nums[i] >= 0)
-            dp[i][target] = recurse(nums, i + 1, target - nums[i], dp);
-        dp[i][target] |= recurse(nums, i + 1, target, dp);
-        
-        return dp[i][target];
+        if (recurse(nums, currIndex + 1, target - nums[currIndex], dp))
+        {
+            dp[currIndex][target] = true;
+            return true;
+        }
+        if (recurse(nums, currIndex + 1, target, dp))
+        {
+            dp[currIndex][target] = true;
+            return true;
+        }
+        return dp[currIndex][target] = false;
     }
 };
