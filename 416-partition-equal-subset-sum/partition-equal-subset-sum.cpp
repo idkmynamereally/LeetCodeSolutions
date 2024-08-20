@@ -11,9 +11,27 @@ public:
 
         int target = sum/2;
 
-        vector<vector<int>> dp(nums.size() + 1, vector<int>(target + 1, -1));
+        vector<vector<int>> dp(nums.size() + 1, vector<int>(target + 1, false));
 
-        return recurse(nums, 0, target, dp);
+        for (int i = 0; i < nums.size(); i++)
+        {
+            for (int j = 0; j < target; j++)
+            {
+                if (j == 0)
+                    dp[i][j] = true;
+            }
+        }
+
+        for (int i = nums.size() - 1; i >= 0; i--)
+        {
+            for (int t = 1; t <= target; t++)
+            {
+                if (t - nums[i] >= 0)
+                    dp[i][t] |= dp[i + 1][t - nums[i]];
+                dp[i][t] |= dp[i + 1][t];
+            }
+        }
+        return dp[0][target];
     }
 
     bool recurse(vector<int>& nums, int i, int target, vector<vector<int>>& dp)
