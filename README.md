@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1063-best-sightseeing-pair](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1063-best-sightseeing-pair) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
 ## Dynamic Programming
@@ -25,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1063-best-sightseeing-pair](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1063-best-sightseeing-pair) |
 | [1250-longest-common-subsequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1250-longest-common-subsequence) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -88,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Binary Search
 |  |
