@@ -26,13 +26,12 @@ public:
         if (dp[i][target] != -1)
             return dp[i][target];
 
-        int take = false;
-        int leave = false;
-        if (target - nums[i] >= 0)
-            take = recurse(nums, i + 1, target - nums[i], dp);
-        leave = recurse(nums, i + 1, target, dp);
+        dp[i][target] = false;
 
-        dp[i][target] = take || leave;
+        if (target - nums[i] >= 0)
+            dp[i][target] |= recurse(nums, i + 1, target - nums[i], dp);
+        dp[i][target] |= recurse(nums, i + 1, target, dp);
+        
         return dp[i][target];
     }
 };
