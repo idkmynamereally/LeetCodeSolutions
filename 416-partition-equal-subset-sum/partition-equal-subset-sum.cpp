@@ -1,43 +1,38 @@
-class Solution
-{
+class Solution {
 public:
     bool canPartition(vector<int>& nums)
     {
-        int sum{ 0 };
-        for (int i : nums)
-            sum += i;
+        int sum = 0;
+        for (int i = 0; i < nums.size(); i++)
+            sum += nums[i];
 
-        if (sum % 2 != 0)
+        if (sum % 2)
             return false;
 
-        vector<vector<int>> dp(nums.size(), vector<int>(sum/2 + 1, -1)); 
-        return recurse(nums, 0, sum / 2, dp);
+        int target = sum/2;
+
+        vector<vector<int>> dp(nums.size() + 1, vector<int>(target + 1, -1));
+
+        return recurse(nums, 0, target, dp);
     }
 
-    bool recurse(vector<int>& nums, int currIndex, int target, vector<vector<int>>& dp)
+    bool recurse(vector<int>& nums, int i, int target, vector<vector<int>>& dp)
     {
-        if (target < 0)
-            return false;
-        
         if (target == 0)
             return true;
-
-        if (currIndex == nums.size())
+        if (i == nums.size())
             return false;
 
-        if (dp[currIndex][target] != -1)
-            return dp[currIndex][target];
+        if (dp[i][target] != -1)
+            return dp[i][target];
 
-        if (recurse(nums, currIndex + 1, target - nums[currIndex], dp))
-        {
-            dp[currIndex][target] = true;
-            return true;
-        }
-        if (recurse(nums, currIndex + 1, target, dp))
-        {
-            dp[currIndex][target] = true;
-            return true;
-        }
-        return dp[currIndex][target] = false;
+        int take = false;
+        int leave = false;
+        if (target - nums[i] >= 0)
+            take = recurse(nums, i + 1, target - nums[i], dp);
+        leave = recurse(nums, i + 1, target, dp);
+
+        dp[i][target] = take || leave;
+        return dp[i][target];
     }
 };
