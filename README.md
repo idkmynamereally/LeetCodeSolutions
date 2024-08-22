@@ -162,4 +162,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0424-longest-repeating-character-replacement) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0476-number-complement](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0476-number-complement) |
 <!---LeetCode Topics End-->
