@@ -6,27 +6,56 @@ public:
         int sum = 0;
         for (int i = 0; i < nums.size(); i++)
             sum += nums[i];
-
+        int s1 = (target + sum) / 2;
         if (sum % 2 && !(target % 2))
             return 0;
         if (!(sum % 2) && target % 2)
             return 0;
 
-        int s1 = (sum + target) / 2;
+        if (s1 < 0)
+            s1 = sum - s1;
 
-        return recurse(nums, 0, s1);
+        vector<vector<int>> dp(nums.size() + 1, vector<int>(s1 + 1, 0));
+        
+        for (int i = 0; i <= nums.size(); i++)
+        {
+            for (int t = 0; t <= s1; t++)
+            {
+                if (i == nums.size() || t < 0)
+                    dp[i][t] = 0;
+                if (i == nums.size() && t == 0)
+                    dp[i][t] = 1;
+            }
+        }
+
+        for (int i = nums.size() - 1; i >= 0; i--)
+        {
+            for (int t = 0; t <= s1; t++)
+            {
+                if (t - nums[i] >= 0)
+                    dp[i][t] = dp[i + 1][t] + dp[i + 1][t - nums[i]];
+                else
+                    dp[i][t] = dp[i + 1][t];
+            }
+        }
+
+        return dp[0][s1];
     }
 
-    int recurse(vector<int> &nums, int i, int t)
+    int recurse(vector<int> &nums, int i, int t, vector<vector<int>> &dp)
     {
         if (i == nums.size() && t == 0)
             return 1;
         if (i == nums.size() || t < 0)
             return 0;
 
-        int take = recurse(nums, i + 1, t - nums[i]);
-        int leave = recurse(nums, i + 1, t);
+        if (dp[i][t] != -1)
+            return dp[i][t];
 
-        return take + leave;
+        int take = recurse(nums, i + 1, t - nums[i], dp);
+        int leave = recurse(nums, i + 1, t, dp);
+
+        dp[i][t] = take + leave;
+        return dp[i][t];
     }
 };
