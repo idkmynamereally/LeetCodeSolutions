@@ -12,16 +12,10 @@ public:
 
         vector<vector<int>> dp(coins.size() + 1, vector<int>(amount + 1, 0));
 
+        for (int t = 0; t <= amount; t++)
+            dp[coins.size()][t] = 0; // 0 possible subsets if no more coins left
         for (int i = 0; i <= coins.size(); i++)
-        {
-            for (int t = 0; t <= amount; t++)
-            {
-                if (i == coins.size())
-                    dp[i][t] = 0; // 0 possible subsets if no more coins left
-                if (t == 0)
-                    dp[i][t] = 1; // 1 possible subset if amount to make is 0
-            }
-        }
+            dp[i][0] = 1; // 1 possible subset if amount to make is 0
 
         for (int i = coins.size() - 1; i >= 0; i--)
         {
