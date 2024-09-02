@@ -1,40 +1,33 @@
-class Solution 
-{
+class Solution {
 public:
-    vector<int> maxSlidingWindow(vector<int>& nums, int k) 
+    vector<int> maxSlidingWindow(vector<int>& nums, int k)
     {
-        std::deque<int> deck;
-        std::vector<int> ans;
-        
-        for (int i = 0; i < k; i++)     //Create deque for the first window
-        {
-            addToWindow(deck, nums[i]);
-        }
+        int l = 0;
+        int r = k - 1;
 
-        for (int i = 0; i <= (nums.size() - k); i++)     //Now move window while modifying the deck
+        deque<int> deq;
+        vector<int> ans;
+
+        for (int i = l; i <= r; i++)
         {
-            ans.push_back(deck.front());
-            removeLeftElement(deck, nums[i]);
-            if ((i + k) < nums.size())
-            {
-                addToWindow(deck, nums[i + k]);
-            }
+            int n = nums[i];
+            while (!deq.empty() && n > deq.back())
+                deq.pop_back();
+            deq.push_back(n);
+        }
+        ans.push_back(deq.front());
+        while (r < nums.size() - 1)
+        {
+            if (deq.front() == nums[l])
+                deq.pop_front();
+            l++;
+            r++;
+            while (!deq.empty() && deq.back() < nums[r])
+                deq.pop_back();
+            deq.push_back(nums[r]);
+         
+            ans.push_back(deq.front());
         }
         return ans;
-    }
-
-    void addToWindow(std::deque<int>& deck, int num)
-    {
-        while ((!deck.empty()) && num > deck.back())
-            deck.pop_back();
-        deck.push_back(num);
-    }
-
-    void removeLeftElement(std::deque<int>& deck, int leftRemove)
-    {
-        if (leftRemove == deck.front())
-        {
-            deck.pop_front();
-        }
     }
 };
