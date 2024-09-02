@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0040-combination-sum-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0040-combination-sum-ii) |
+| [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0416-partition-equal-subset-sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0416-partition-equal-subset-sum) |
@@ -168,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Data Stream
 |  |
@@ -181,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sliding Window
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0424-longest-repeating-character-replacement) |
 ## Bit Manipulation
 |  |
@@ -198,4 +201,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
+## Queue
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
 <!---LeetCode Topics End-->
