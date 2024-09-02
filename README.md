@@ -26,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0010-regular-expression-matching](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0010-regular-expression-matching) |
 | [0062-unique-paths](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0062-unique-paths) |
+| [0072-edit-distance](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0072-edit-distance) |
 | [0097-interleaving-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0097-interleaving-string) |
 | [0115-distinct-subsequences](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0115-distinct-subsequences) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
@@ -79,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0010-regular-expression-matching](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0010-regular-expression-matching) |
 | [0014-longest-common-prefix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0014-longest-common-prefix) |
+| [0072-edit-distance](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0072-edit-distance) |
 | [0097-interleaving-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0097-interleaving-string) |
 | [0115-distinct-subsequences](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0115-distinct-subsequences) |
 | [0273-integer-to-english-words](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0273-integer-to-english-words) |
