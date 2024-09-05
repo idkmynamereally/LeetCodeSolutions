@@ -1,18 +1,31 @@
 class Solution
 {
 public:
-    int maxSubArray(vector<int>& nums)
+    int maxSubArray(vector<int> &nums)
     {
-        std::ios::sync_with_stdio(0);
-        std::cin.tie(0);
-        int ans = INT_MIN;
-        int currSum = 0;
-        for (int i : nums)
+        int left = 0;
+        int right = 0;
+
+        int sum = 0;
+        int max = INT_MIN;
+
+        while (right < nums.size())
         {
-            currSum += i;
-            ans = ans > currSum ? ans : currSum;
-            currSum = currSum < 0 ? 0 : currSum;
+            sum += nums[right];
+            max = max > sum ? max : sum;
+            while (left < nums.size() && sum < 0)
+            {
+                sum -= nums[left];
+                left++;
+            }
+            if (left > right)
+            {
+                right = left;
+                continue;
+            }
+            right++;
         }
-        return ans;
+
+        return max;
     }
 };
