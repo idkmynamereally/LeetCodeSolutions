@@ -4,18 +4,14 @@ public:
     bool canJump(vector<int> &nums)
     {
         vector<bool> can(nums.size(), false);
-        can[nums.size() - 1] = true;
+        int closest = nums.size() - 1;
 
         for (int i = nums.size() - 2; i >= 0; i--)
         {
-            bool ans = false;
-            for (int j = i + 1; !ans && j <= i + nums[i]; j++)
-            {
-                ans |= can[j];
-            }
-            can[i] = ans;
+            if (i + nums[i] >= closest)
+                closest = i;
         }
 
-        return can[0];
+        return (closest == 0);
     }
 };
