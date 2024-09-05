@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0040-combination-sum-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0040-combination-sum-ii) |
+| [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
 | [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -26,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0010-regular-expression-matching](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0010-regular-expression-matching) |
+| [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0062-unique-paths) |
 | [0072-edit-distance](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0072-edit-distance) |
 | [0097-interleaving-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0097-interleaving-string) |
@@ -209,4 +211,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
