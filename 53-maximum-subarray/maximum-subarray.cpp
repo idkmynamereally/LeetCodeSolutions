@@ -3,6 +3,8 @@ class Solution
 public:
     int maxSubArray(vector<int> &nums)
     {
+        std::ios::sync_with_stdio(0);
+        std::cin.tie(0);
         int left = 0;
         int right = 0;
 
