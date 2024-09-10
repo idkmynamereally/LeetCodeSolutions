@@ -26,20 +26,12 @@ public:
         return head;
     }
     int gcd(int a, int b)
-    {
-        if (a > b)
-        {
-            int t = a;
-            a = b;
-            b = t;
+    {while(b != 0){
+            int temp = b;
+            b = a%b;
+            a = temp;
         }
-        int i = a;
-        while (i)
-        {
-            if (a % i == 0 && b % i == 0)
-                return i;
-            i--;
-        }
-        return 0;
+
+        return a;
     }
 };
