@@ -18,20 +18,11 @@ public:
             int a = ptr->val;
             int b = ptr->next->val;
             ListNode* n = ptr->next;
-            ListNode* t = new ListNode(gcd(a, b));
+            ListNode* t = new ListNode(__gcd(a, b));
             t->next = n;
             ptr->next = t;
             ptr = n;
         }
         return head;
-    }
-    int gcd(int a, int b)
-    {while(b != 0){
-            int temp = b;
-            b = a%b;
-            a = temp;
-        }
-
-        return a;
     }
 };
