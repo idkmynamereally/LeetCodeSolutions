@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0040-combination-sum-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0040-combination-sum-ii) |
 | [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0055-jump-game) |
+| [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -139,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0921-spiral-matrix-iii) |
@@ -157,11 +159,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0101-symmetric-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0101-symmetric-tree) |
 | [0145-binary-tree-postorder-traversal](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0145-binary-tree-postorder-traversal) |
+| [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0101-symmetric-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0101-symmetric-tree) |
+| [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 ## Binary Tree
 |  |
@@ -230,4 +234,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
+## Union Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
