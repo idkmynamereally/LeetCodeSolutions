@@ -102,6 +102,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0133-clone-graph) |
 | [0424-longest-repeating-character-replacement](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -160,6 +161,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0101-symmetric-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0101-symmetric-tree) |
+| [0133-clone-graph](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0133-clone-graph) |
 | [0145-binary-tree-postorder-traversal](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -168,6 +170,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0101-symmetric-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0101-symmetric-tree) |
+| [0133-clone-graph](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0133-clone-graph) |
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0695-max-area-of-island](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0695-max-area-of-island) |
@@ -213,6 +216,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Graph
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0133-clone-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 ## Topological Sort
 |  |
