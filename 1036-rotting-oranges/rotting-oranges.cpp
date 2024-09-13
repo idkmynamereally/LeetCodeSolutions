@@ -1,68 +1,73 @@
 class Solution
 {
 public:
-    int orangesRotting(vector<vector<int>>& grid)
+    int orangesRotting(vector<vector<int>> &grid)
     {
+        int n = grid.size();
+        int m = grid[0].size();
         queue<pair<int, int>> q;
-        for (int i = 0; i < grid.size(); i++)
+        for (int i = 0; i < n; i++)
         {
-            for (int j = 0; j < grid[0].size(); j++)
+            for (int j = 0; j < m; j++)
             {
                 if (grid[i][j] == 2)
-                {
                     q.push(pair<int, int>(i, j));
-                }
             }
         }
-        int ans = bfs(grid, q);
-        for (int i = 0; i < grid.size(); i++)
+
+        int t = bfs(grid, q);
+
+        for (int i = 0; i < n; i++)
         {
-            for (int j = 0; j < grid[0].size(); j++)
+            for (int j = 0; j < m; j++)
             {
                 if (grid[i][j] == 1)
                     return -1;
             }
         }
-        return ans;
+        return t;
     }
 
-    int bfs(vector<vector<int>>& grid, queue<pair<int, int>>& q)
+    int bfs(vector<vector<int>> &grid, queue<pair<int, int>> &q)
     {
-        if (q.empty())
-            return 0;
-        int ans = -1;
+        int mint = -1; // minutes passed;
         while (!q.empty())
         {
-            ans++;
-            int size = q.size();
+            mint++;
+            int size = q.size(); // number of rotten oranges in current level
             while (size--)
             {
-                auto top = q.front();
-                int r = top.first;
-                int c = top.second;
-                if (c < grid[0].size() - 1 && grid[r][c + 1] == 1)
-                {
-                    grid[r][c + 1] = 2;
-                    q.push(pair<int, int>(r, c + 1));
-                }
-                if (c != 0 && grid[r][c - 1] == 1)
-                {
-                    grid[r][c - 1] = 2;
-                    q.push(pair<int, int>(r, c - 1));
-                }
-                if (r != 0 && grid[r - 1][c] == 1)
+                auto front = q.front();
+                q.pop();
+                int r = front.first;
+                int c = front.second;
+                if ((r - 1) >= 0 && grid[r - 1][c] == 1)
                 {
                     grid[r - 1][c] = 2;
                     q.push(pair<int, int>(r - 1, c));
                 }
-                if (r < grid.size() - 1 && grid[r + 1][c] == 1)
+
+                if ((r + 1) != grid.size() && grid[r + 1][c] == 1)
                 {
                     grid[r + 1][c] = 2;
                     q.push(pair<int, int>(r + 1, c));
                 }
-                q.pop();
+
+                if ((c + 1) != grid[0].size() && grid[r][c + 1] == 1)
+                {
+                    grid[r][c + 1] = 2;
+                    q.push(pair<int, int>(r, c + 1));
+                }
+
+                if ((c - 1) >= 0 && grid[r][c - 1] == 1)
+                {
+                    grid[r][c - 1] = 2;
+                    q.push(pair<int, int>(r, c - 1));
+                }
             }
         }
-        return ans;
+        if (mint == -1)
+            return 0;
+        return mint;
     }
 };
