@@ -1,44 +1,37 @@
-// Boost i/o.
-auto init = []() {
-  ios::sync_with_stdio(false);
-  cin.tie(nullptr);
-  cout.tie(nullptr);
-  return 'c';
-}();
-
-class Solution 
+class Solution
 {
 public:
-    int numIslands(vector<vector<char>>& grid)
+    int numIslands(vector<vector<char>> &grid)
     {
+        int n = grid.size();
+        int m = grid[0].size();
         int ans = 0;
-        int m = grid.size();
-        int n = grid[0].size();
-        
-        for (int i = 0; i < m; i++)
+        for (int i = 0; i < n; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < m; j++)
             {
-                if (grid[i][j] == '1')
-                {
-                    ans++;
-                    dfs(grid, i, j);
-                }
+                if (grid[i][j] == '0')
+                    continue;
+                ans++;
+                dfs(grid, i, j);
             }
         }
         return ans;
     }
 
-    void dfs(vector<vector<char>>& grid, int r, int c)
+    void dfs(vector<vector<char>> &grid, int i, int j)
     {
-        if (r == -1 || c == -1 || r >= grid.size() || c >= grid[0].size())
+        if (i < 0 || j < 0 || i == grid.size() || j == grid[0].size())
             return;
-        if (grid[r][c] == '0')
+
+        if (grid[i][j] == '0' || grid[i][j] == '0')
             return;
-        grid[r][c] = '0';
-        dfs(grid, r + 1, c);
-        dfs(grid, r, c + 1);
-        dfs(grid, r - 1, c);
-        dfs(grid, r, c - 1);
+
+        grid[i][j] = '0';
+
+        dfs(grid, i + 1, j);
+        dfs(grid, i - 1, j);
+        dfs(grid, i, j + 1);
+        dfs(grid, i, j - 1);
     }
 };
