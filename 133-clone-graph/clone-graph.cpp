@@ -1,26 +1,25 @@
-class Solution 
+class Solution
 {
 public:
-    Node* cloneGraph(Node* node) 
+    Node *cloneGraph(Node *node)
     {
-        if (node == nullptr)
-            return nullptr;
-
-        unordered_map<Node*, Node*> map;
-        dfs(node, map);
-        return map[node];
+        unordered_map<int, Node *> mp;
+        return clone(node, mp);
     }
 
-    void dfs(Node* node, unordered_map<Node*, Node*>& map)
+    Node *clone(Node *n, unordered_map<int, Node *> &mp)
     {
-        map[node] = new Node(node->val);
-        Node* currNode = map[node];
+        if (!n)
+            return nullptr;
+        if (mp.count(n->val))
+            return mp[n->val];
 
-        for (auto n : node->neighbors)
+        mp[n->val] = new Node(n->val);
+
+        for (const auto& i : n->neighbors)
         {
-            if (!map.contains(n))
-                dfs(n, map);
-            currNode->neighbors.push_back(map[n]);
+            mp[n->val]->neighbors.push_back(clone(i, mp));
         }
+        return mp[n->val];
     }
 };
