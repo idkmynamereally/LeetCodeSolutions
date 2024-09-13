@@ -16,7 +16,7 @@ public:
         mp[node] = new Node(node->val);
         Node *currNode = mp[node];
 
-        for (const auto &i : node->neighbors)
+        for (auto i : node->neighbors)
         {
             if (!mp.count(i))
                 clone(i, mp);
