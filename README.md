@@ -216,6 +216,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0136-single-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0136-single-number) |
+| [0191-number-of-1-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0191-number-of-1-bits) |
 | [0476-number-complement](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0476-number-complement) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2323-minimum-bit-flips-to-convert-number) |
@@ -244,6 +245,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
+| [0191-number-of-1-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0191-number-of-1-bits) |
 ## Number Theory
 |  |
 | ------- |
