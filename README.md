@@ -217,6 +217,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0136-single-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0136-single-number) |
+| [0190-reverse-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0191-number-of-1-bits) |
 | [0338-counting-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0338-counting-bits) |
 | [0476-number-complement](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0476-number-complement) |
@@ -247,6 +248,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
+| [0190-reverse-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0191-number-of-1-bits) |
 ## Number Theory
 |  |
