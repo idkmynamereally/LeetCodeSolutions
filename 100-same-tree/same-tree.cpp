@@ -1,22 +1,28 @@
-class Solution 
-{
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) 
-    {
-        return (inOrder(p,q));
-    }
-
-    bool inOrder(TreeNode* node1, TreeNode* node2)
-    {
-        if (node1 == nullptr || node2 == nullptr)
-        {
-            return (node1 == node2);
-        }
-        if (!inOrder(node1->left, node2->left))
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        if (!p && !q)
+            return true;
+        if (!p)
             return false;
-        if (!inOrder(node1->right, node2->right))
+        if (!q)
             return false;
-        if (node1->val != node2->val)
+        if (p->val != q->val)
+            return false;
+        if (!isSameTree(p->left, q->left))
+            return false;
+        if (!isSameTree(p->right, q->right))
             return false;
         return true;
     }
