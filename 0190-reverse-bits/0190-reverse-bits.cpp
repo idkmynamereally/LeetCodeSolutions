@@ -8,9 +8,13 @@ public:
         for (int i = 0; i < 32; i++)
         {
             if (n & 1)
-                ans += pow(2, p);
-            p--;
+            {
+                uint32_t revbit = 1;
+                revbit <<= p;
+                ans += revbit;
+            }
             n >>= 1;
+            p--;
         }
         return ans;
     }
