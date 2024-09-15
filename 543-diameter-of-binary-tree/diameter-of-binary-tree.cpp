@@ -17,16 +17,11 @@ public:
 	{
 		if (root == nullptr)
 			return 0;
-		int leftSubtreeHeight = maxDepth(root->left);		//add these two if longest path passes throught current node
-		int rightSubtreeHeight = maxDepth(root->right);
+		int leftSubtreeHeight = depth(root->left, 0);		//add these two if longest path passes throught current node
+		int rightSubtreeHeight = depth(root->right, 0);
 		int ans = max(diameterOfBinaryTree(root->left), diameterOfBinaryTree(root->right));	//call same function if the longest path passes through childeren
 		ans = max(ans, (leftSubtreeHeight + rightSubtreeHeight));	//if yes then choose the largest of the three.
 		return ans;
-	}
-
-	int maxDepth(TreeNode* root)
-	{
-		return depth(root, 0);
 	}
 
 	int depth(TreeNode* root, int deep)
