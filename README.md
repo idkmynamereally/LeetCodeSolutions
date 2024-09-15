@@ -159,6 +159,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0101-symmetric-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0101-symmetric-tree) |
+| [0110-balanced-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0110-balanced-binary-tree) |
 | [0145-binary-tree-postorder-traversal](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0543-diameter-of-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0543-diameter-of-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -167,6 +168,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0101-symmetric-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0101-symmetric-tree) |
+| [0110-balanced-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0110-balanced-binary-tree) |
 | [0133-clone-graph](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0133-clone-graph) |
 | [0145-binary-tree-postorder-traversal](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
@@ -186,6 +188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0101-symmetric-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0101-symmetric-tree) |
+| [0110-balanced-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0110-balanced-binary-tree) |
 | [0145-binary-tree-postorder-traversal](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0543-diameter-of-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0543-diameter-of-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0789-kth-largest-element-in-a-stream) |
