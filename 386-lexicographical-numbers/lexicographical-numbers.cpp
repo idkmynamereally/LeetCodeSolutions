@@ -19,6 +19,8 @@ public:
         {
             num *= 10;
             num += d;
+            if (num > n)
+                break;
             dfs(n, num, ans);
             num -= d;
             num /= 10;
