@@ -188,6 +188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0543-diameter-of-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -203,6 +204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0543-diameter-of-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0543-diameter-of-binary-tree) |
 | [0695-max-area-of-island](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0695-max-area-of-island) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -214,6 +216,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0695-max-area-of-island](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0695-max-area-of-island) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
@@ -227,6 +230,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0543-diameter-of-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Design
 |  |
 | ------- |
