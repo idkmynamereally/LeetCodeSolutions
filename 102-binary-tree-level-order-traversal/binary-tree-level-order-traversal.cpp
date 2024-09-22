@@ -1,30 +1,32 @@
-class Solution {
+class Solution
+{
 public:
-    vector<vector<int>> levelOrder(TreeNode* root) 
+    vector<vector<int>> levelOrder(TreeNode *root)
     {
-        //BFS Time
-        std::vector<std::vector<int>> v;
-        if (root == nullptr)
-            return v;
-        std::queue<TreeNode*> que;
-        que.push(root);
+        queue<TreeNode *> q;
+        if (root)
+            q.push(root);
+        vector<vector<int>> ans;
         
-        while (!que.empty())
+        vector<int> curr;
+        while (!q.empty())
         {
-            int ogSize = que.size();
-            std::vector<int> currSubList;
-            for (int i = 0; i < ogSize; i++)
+            int size = q.size();
+            while (size--)
             {
-                TreeNode* temp = que.front();
-                if (temp->left)
-                    que.push(temp->left);
-                if (temp->right)
-                    que.push(temp->right);
-                que.pop();
-                currSubList.push_back(temp->val);
+                TreeNode *top = q.front();
+                curr.push_back(top->val);
+                
+                if (top->left)
+                    q.push(top->left);
+                if (top->right)
+                    q.push(top->right);
+                
+                q.pop();
             }
-            v.push_back(currSubList);
+            ans.push_back(curr);
+            curr.clear();
         }
-        return v;
+        return ans;
     }
 };
