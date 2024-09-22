@@ -1,29 +1,29 @@
-class Solution {
+class Solution
+{
 public:
-    vector<int> rightSideView(TreeNode* root) 
+    vector<int> rightSideView(TreeNode *root)
     {
-        //Approach: BFS and only take the last element of each level
-        std::vector<int> v;
-        if (root == nullptr)
-            return v;
-        TreeNode* temp = root;
-        std::queue<TreeNode*> que;
-        que.push(root);
-
-        while (!que.empty())
+        queue<TreeNode *> q;
+        if (root)
+            q.push(root);
+        vector<int> ans;
+        while (!q.empty())
         {
-            int ogSize = que.size();
-            for (int i = 0; i < ogSize; i++)
+            int size = q.size();
+            while (size--)
             {
-                temp = que.front();
-                if (temp->left)
-                    que.push(temp->left);
-                if (temp->right)
-                    que.push(temp->right);
-                que.pop();
+                TreeNode* top = q.front();
+                q.pop();
+
+                if (top->left)
+                    q.push(top->left);
+                if (top->right)
+                    q.push(top->right);
+                
+                if (!size)
+                    ans.push_back(top->val);
             }
-            v.push_back(temp->val);
         }
-        return v;
+        return ans;
     }
 };
