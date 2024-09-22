@@ -20,7 +20,7 @@ public:
                 if (top->right)
                     q.push(top->right);
                 
-                if (size == 0)
+                if (!size)
                     ans.push_back(top->val);
             }
         }
