@@ -4,7 +4,7 @@ public:
     int goodNodes(TreeNode *root)
     {
         stack<int> st;
-        int ans = 0;
+        int ans = 1;
         findMax(root, st, ans);
         return ans;
     }
@@ -16,8 +16,7 @@ public:
 
         if (st.empty())
             st.push(node->val);
-
-        if (node->val >= st.top())
+        else if (node->val >= st.top())
         {
             ans++;
             st.push(node->val);
