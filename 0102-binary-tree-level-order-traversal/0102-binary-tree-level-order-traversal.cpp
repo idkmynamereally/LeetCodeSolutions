@@ -8,10 +8,10 @@ public:
             q.push(root);
         vector<vector<int>> ans;
         
+        vector<int> curr;
         while (!q.empty())
         {
             int size = q.size();
-            vector<int> curr;
             while (size--)
             {
                 TreeNode *top = q.front();
@@ -25,6 +25,7 @@ public:
                 q.pop();
             }
             ans.push_back(curr);
+            curr.clear();
         }
         return ans;
     }
