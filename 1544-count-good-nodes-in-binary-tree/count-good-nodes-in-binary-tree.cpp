@@ -1,34 +1,31 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution 
+class Solution
 {
 public:
-    int goodNodes(TreeNode* root) 
+    int goodNodes(TreeNode *root)
     {
-        int count = 0;
-        goodNodesRec(root->val, count, root);
-        return count;
+        stack<int> st;
+        int ans = 0;
+        findMax(root, st, ans);
+        return ans;
     }
-    
-    void goodNodesRec(int greatestSofar, int& count, TreeNode* node)
+
+    void findMax(TreeNode *node, stack<int> &st, int &ans)
     {
-        if (node == nullptr)
+        if (!node)
             return;
-        if (node->val >= greatestSofar)
+
+        if (st.empty())
+            st.push(node->val);
+
+        if (node->val >= st.top())
         {
-            greatestSofar = node->val;
-            count++;
+            ans++;
+            st.push(node->val);
         }
-        goodNodesRec(greatestSofar, count, node->left);
-        goodNodesRec(greatestSofar, count, node->right);
+        findMax(node->left, st, ans);
+        findMax(node->right, st, ans);
+
+        if (st.top() == node->val)
+            st.pop();
     }
 };
