@@ -1,20 +1,29 @@
+#define ll long long
 class Solution
 {
 public:
-    bool isValidBST(TreeNode* root)
+    bool isValidBST(TreeNode *root)
     {
-        long long int mx = (long long int)INT_MAX + 1;
-        long long int mn = (long long int)INT_MIN - 1;
-        //std::cout << mx;
-        return checkBST(mn, mx, root);
+        return recurse(root, (ll)INT_MIN - 2, (ll)INT_MAX + 2);
     }
 
-    bool checkBST(long long int min, long long int max, TreeNode* node)
+    bool recurse(TreeNode *node, ll min, ll max)
     {
-        if (node == nullptr)
+        if (!node)
             return true;
-        if (!(node->val > min && node->val < max))
+
+        int v = node->val;
+
+
+
+        if (v <= min || v >= max)
             return false;
-        return (checkBST(min, node->val, node->left) && checkBST(node->val, max, node->right));
+
+        bool ans = true;
+
+        ans &= recurse(node->left, min, v);
+        ans &= recurse(node->right, v, max);
+
+        return ans;
     }
 };
