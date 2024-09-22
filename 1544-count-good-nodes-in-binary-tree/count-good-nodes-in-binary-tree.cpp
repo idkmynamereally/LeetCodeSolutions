@@ -4,8 +4,7 @@ public:
     int goodNodes(TreeNode *root)
     {
         int ans = 0;
-        int max = root->val;
-        findMax(root, max, ans);
+        findMax(root, INT_MIN, ans);
         return ans;
     }
 
