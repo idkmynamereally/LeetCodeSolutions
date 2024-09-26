@@ -13,11 +13,18 @@ public:
         if (!node)
             return 0;
 
-        int left = max(0, trav(node->left, ans));
-        int right = max(0, trav(node->right, ans));
+        int left = trav(node->left, ans);
+        int right = trav(node->right, ans);
 
-        ans = max(ans, left + right + node->val);
+        int t = left + right + node->val;
+        t = t > node->val ? t : node->val;
+        ans = ans > t ? ans : t;
 
-        return node->val + max(left, right);
+        int ret = node->val;
+        ret += (left > right ? left : right);
+        ans = ans > ret ? ans : ret;
+        ret = ret > node->val ? ret : node->val;
+
+        return ret;
     }
 };
