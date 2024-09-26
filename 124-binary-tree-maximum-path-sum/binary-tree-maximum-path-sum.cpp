@@ -1,43 +1,30 @@
-class Solution 
+class Solution
 {
 public:
-    int maxPathSum(TreeNode* root)
+    int maxPathSum(TreeNode *root)
     {
         int ans = INT_MIN;
-        solve(ans, root);
+        trav(root, ans);
         return ans;
     }
 
-    int solve(int& max, TreeNode* node)
+    int trav(TreeNode *node, int &ans)
     {
-        if (node == nullptr)
+        if (!node)
             return 0;
 
-        int leftMax = solve(max, node->left);
-        int rightMax = solve(max, node->right);
+        int left = trav(node->left, ans);
+        int right = trav(node->right, ans);
 
-        if ((node->val + leftMax + rightMax) > max)
-            max = node->val + leftMax + rightMax;
+        int t = left + right + node->val;
+        t = t > node->val ? t : node->val;
+        ans = ans > t ? ans : t;
 
-        if ((node->val + leftMax) > max)
-            max = node->val + leftMax;
+        int ret = node->val;
+        ret += (left > right ? left : right);
+        ans = ans > ret ? ans : ret;
+        ret = ret > node->val ? ret : node->val;
 
-        if ((node->val + rightMax) > max)
-            max = node->val + rightMax;
-
-        if (node->val > max)
-            max = node->val;
-
-        int ret;
-        
-        if ((node->val + leftMax) > (node->val + rightMax))
-            ret = node->val + leftMax;
-        else
-            ret = node->val + rightMax;
-        
-        if (node->val > ret)
-            ret = node->val;
-        
         return ret;
     }
 };
