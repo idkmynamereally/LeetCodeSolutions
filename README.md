@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0055-jump-game](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0055-jump-game) |
 | [0066-plus-one](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0066-plus-one) |
 | [0075-sort-colors](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0075-sort-colors) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0136-single-number) |
 | [0179-largest-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0179-largest-number) |
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
@@ -44,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0072-edit-distance](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0072-edit-distance) |
 | [0097-interleaving-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0097-interleaving-string) |
 | [0115-distinct-subsequences](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0115-distinct-subsequences) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
