@@ -1,24 +1,25 @@
-class Solution {
+class Solution
+{
 public:
-    vector<vector<int>> subsets(vector<int>& nums) 
+    vector<vector<int>> subsets(vector<int> &nums)
     {
         vector<vector<int>> ans;
         vector<int> curr;
-        helper(ans, curr, nums, 0);
+        recurse(0, curr, nums, ans);
         return ans;
     }
 
-    void helper(vector<vector<int>>& ans, vector<int>& curr, vector<int>& nums, int currIndex)
+    void recurse(int i, vector<int>& curr, vector<int> &nums, vector<vector<int>> &ans)
     {
-        if (currIndex == nums.size())
+        if (i == nums.size())
         {
             ans.push_back(curr);
             return;
         }
 
-        helper(ans, curr, nums, currIndex + 1);
-        curr.push_back(nums[currIndex]);
-        helper(ans, curr, nums, currIndex + 1);
+        recurse(i + 1, curr, nums, ans); // Dont take i
+        curr.push_back(nums[i]);
+        recurse(i + 1, curr, nums, ans);
         curr.pop_back();
     }
 };
