@@ -1,33 +1,20 @@
-class Solution
-{
+int speedUp = [] {
+    std::ios::sync_with_stdio(0);
+    std::cin.tie(0);
+    return 0;
+}();
+
+class Solution {
 public:
-    int maxSubArray(vector<int> &nums)
-    {
-        std::ios::sync_with_stdio(0);
-        std::cin.tie(0);
-        int left = 0;
-        int right = 0;
-
+    int maxSubArray(vector<int>& nums) {
         int sum = 0;
-        int max = INT_MIN;
-
-        while (right < nums.size())
+        int ans = INT_MIN;
+        for (int i = 0; i < nums.size(); i++)
         {
-            sum += nums[right];
-            max = max > sum ? max : sum;
-            while (left < nums.size() && sum < 0)
-            {
-                sum -= nums[left];
-                left++;
-            }
-            if (left > right)
-            {
-                right = left;
-                continue;
-            }
-            right++;
+            sum += nums[i];
+            ans = ans > sum ? ans : sum;
+            sum = sum > 0 ? sum : 0;
         }
-
-        return max;
+        return ans;
     }
 };
