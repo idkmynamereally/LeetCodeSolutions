@@ -9,7 +9,7 @@ public:
         return ans;
     }
 
-    void recurse(int i, vector<int> curr, vector<int>& nums, vector<vector<int>>& ans)
+    void recurse(int i, vector<int>& curr, vector<int> &nums, vector<vector<int>> &ans)
     {
         if (i == nums.size())
         {
@@ -17,8 +17,9 @@ public:
             return;
         }
 
-        recurse(i + 1, curr, nums, ans);    //Dont take i
+        recurse(i + 1, curr, nums, ans); // Dont take i
         curr.push_back(nums[i]);
         recurse(i + 1, curr, nums, ans);
+        curr.pop_back();
     }
 };
