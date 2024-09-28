@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0055-jump-game) |
 | [0066-plus-one](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0066-plus-one) |
+| [0075-sort-colors](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0075-sort-colors) |
 | [0136-single-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0136-single-number) |
 | [0179-largest-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0179-largest-number) |
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
@@ -91,6 +92,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0075-sort-colors) |
 | [0202-happy-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0234-palindrome-linked-list) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
@@ -142,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0075-sort-colors) |
 | [0179-largest-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0179-largest-number) |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
 | [0539-minimum-time-difference](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0539-minimum-time-difference) |
