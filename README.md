@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0055-jump-game](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0055-jump-game) |
 | [0066-plus-one](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0066-plus-one) |
 | [0075-sort-colors](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0078-subsets) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0136-single-number) |
 | [0179-largest-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0179-largest-number) |
@@ -262,6 +263,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0040-combination-sum-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0040-combination-sum-ii) |
+| [0078-subsets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0078-subsets) |
 | [0494-target-sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0494-target-sum) |
 ## Sliding Window
 |  |
@@ -271,6 +273,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0191-number-of-1-bits) |
