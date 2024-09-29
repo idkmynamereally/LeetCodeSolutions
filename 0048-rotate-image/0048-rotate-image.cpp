@@ -4,31 +4,20 @@ public:
     void rotate(vector<vector<int>> &matrix)
     {
         int n = matrix.size();
-        for (int i = 0; i < n; i++) // transpose of matrix
+
+        for (int i = 0; i < n; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < i; j++)
             {
-                if (i == j)
-                    break;
-                int t = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = t;
+                int t = matrix[j][i];
+                matrix[j][i] = matrix[i][j];
+                matrix[i][j] = t;
             }
         }
 
-        for (int i = 0; i < n; i++) // reverse all rows
+        for (int i = 0; i < n; i++)
         {
-            int l = 0;
-            int r = n - 1;
-
-            while (l < r)
-            {
-                int t = matrix[i][l];
-                matrix[i][l] = matrix[i][r];
-                matrix[i][r] = t;
-                l++;
-                r--;
-            }
+            reverse(matrix[i].begin(), matrix[i].end());
         }
     }
 };
