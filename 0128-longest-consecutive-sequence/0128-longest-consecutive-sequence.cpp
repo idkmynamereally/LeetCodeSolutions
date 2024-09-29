@@ -1,31 +1,33 @@
-class Solution {
+class Solution
+{
 public:
-    //Approach : All values that have a left neighbor cannot be the start of
-    // a sequence of consecutive numbers. so we go to every number if it has a
-    // left neighbor we skip if not we see how long of a sequence it has
-    int longestConsecutive(std::vector<int>& nums) 
+    int longestConsecutive(vector<int> &nums)
     {
-        int max = 0;
-        std::unordered_set<int> allValues;
+        ios_base::sync_with_stdio(false);
+        cin.tie(nullptr);
+        unordered_set<int> set;
         for (int i : nums)
+            set.insert(i);
+
+        int ans = 0;
+
+        for (int i = 0; i < nums.size(); i++)
         {
-            allValues.insert(i);
-        }
-        for (int i : nums)
-        {
-            if (allValues.contains(i - 1))
-                continue;
-            else
+            int head = nums[i];
+            while (set.count(head))
             {
-                int count = 1;
-                int n = i;
-                while (allValues.contains(n + count))
-                {
-                    count++;
-                }
-                max = max > count ? max : count;
+                head--;
             }
+            head++;
+            int t = 0;
+            while (set.count(head))
+            {
+                set.erase(head);
+                head++;
+                t++;
+            }
+            ans = ans > t ? ans : t;
         }
-        return max;
+        return ans;
     }
 };
