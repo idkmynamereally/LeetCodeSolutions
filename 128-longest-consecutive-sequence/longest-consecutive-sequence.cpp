@@ -3,6 +3,8 @@ class Solution
 public:
     int longestConsecutive(vector<int> &nums)
     {
+        ios_base::sync_with_stdio(false);
+        cin.tie(nullptr);
         unordered_set<int> set;
         for (int i : nums)
             set.insert(i);
