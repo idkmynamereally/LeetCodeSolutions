@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0073-set-matrix-zeroes](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0078-subsets) |
+| [0118-pascals-triangle](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0136-single-number) |
@@ -51,6 +52,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0072-edit-distance](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0072-edit-distance) |
 | [0097-interleaving-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0097-interleaving-string) |
 | [0115-distinct-subsequences](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0115-distinct-subsequences) |
+| [0118-pascals-triangle](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
