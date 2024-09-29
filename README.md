@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0075-sort-colors](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0078-subsets) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0128-longest-consecutive-sequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0136-single-number) |
 | [0179-largest-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0179-largest-number) |
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
@@ -128,6 +129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0133-clone-graph) |
 | [0202-happy-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
@@ -321,6 +323,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0695-max-area-of-island) |
 <!---LeetCode Topics End-->
