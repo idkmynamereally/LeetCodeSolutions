@@ -3,27 +3,17 @@ class Solution
 public:
     int subarraySum(vector<int> &nums, int k)
     {
-        vector<int> preSum(nums.size() + 1);
-
+        unordered_map<int, int> mp;
+        mp[0]++;    //empty subarray
         int sum = 0;
-
-        for (int i = 0; i < nums.size(); i++)
-        {
-            preSum[i] = sum;
-            sum += nums[i];
-        }
-
-        preSum[nums.size()] = sum;
+        int n = nums.size();
         int ans = 0;
 
-        for (int i = 0; i < nums.size(); i++)
+        for (int i = 0; i < n; i++)
         {
-            for (int j = i + 1; j <= nums.size(); j++)
-            {
-                int sub = preSum[j] - preSum[i];
-                if (sub == k)
-                    ans++;
-            }
+            sum += nums[i];
+            ans += mp[sum - k];
+            mp[sum]++;
         }
 
         return ans;
