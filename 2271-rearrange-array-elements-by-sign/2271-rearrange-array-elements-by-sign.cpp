@@ -3,26 +3,24 @@ class Solution
 public:
     vector<int> rearrangeArray(vector<int> &nums)
     {
-        vector<int> pos;
-        vector<int> neg;
-        for (int i : nums)
-        {
-            if (i > 0)
-                pos.push_back(i);
-            else
-                neg.push_back(i);
-        }
+        vector<int> ans(nums.size());
+        int pi = 0;
+        int ni = 1;
 
-        int p = 0;
-        int j = 0;
         for (int i = 0; i < nums.size(); i++)
         {
-            if (i % 2)
-                nums[i] = neg[j++];
+            if (nums[i] < 0)
+            {
+                ans[ni] = nums[i];
+                ni += 2;
+            }
             else
-                nums[i] = pos[p++];
+            {
+                ans[pi] = nums[i];
+                pi+=2;
+            }
         }
 
-        return nums;
+        return ans;
     }
 };
