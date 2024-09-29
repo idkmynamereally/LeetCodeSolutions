@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0494-target-sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0518-coin-change-ii) |
 | [0539-minimum-time-difference](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0539-minimum-time-difference) |
+| [0560-subarray-sum-equals-k](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
 | [0695-max-area-of-island](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0695-max-area-of-island) |
 | [0747-min-cost-climbing-stairs](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0747-min-cost-climbing-stairs) |
 | [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
@@ -136,6 +137,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0202-happy-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
 | [0424-longest-repeating-character-replacement](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0424-longest-repeating-character-replacement) |
+| [0560-subarray-sum-equals-k](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
 | [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
@@ -177,6 +179,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 |  |
 | ------- |
+| [0560-subarray-sum-equals-k](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 ## Matrix
 |  |
