@@ -35,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0560-subarray-sum-equals-k](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
 | [0695-max-area-of-island](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0695-max-area-of-island) |
 | [0747-min-cost-climbing-stairs](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0747-min-cost-climbing-stairs) |
+| [0792-binary-search](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0792-binary-search) |
 | [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0921-spiral-matrix-iii) |
 | [1063-best-sightseeing-pair](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1063-best-sightseeing-pair) |
@@ -181,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
+| [0792-binary-search](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0792-binary-search) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 ## Simulation
