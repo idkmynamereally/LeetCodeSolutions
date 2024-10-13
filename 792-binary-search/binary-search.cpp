@@ -1,24 +1,21 @@
-class Solution {
+class Solution
+{
 public:
-    int search(vector<int>& nums, int target) 
+    int search(vector<int> &nums, int target)
     {
-        ios::sync_with_stdio(false);
-        cin.tie(0);
-        cout.tie(0);
+        int l = 0;
+        int r = nums.size() - 1;
+        int m;
 
-        int start {0};
-        int end = nums.size()-1;
-        int middle{};
-
-        while (start <= end)
+        while (l <= r)
         {
-            middle = start + floor((end - start)/2);
-            if (nums[middle] == target)
-                return middle;
-            else if (nums[middle] < target)
-                start = middle + 1;
-            else if (nums[middle] > target)
-                end = middle - 1;
+            m = (l + r) / 2;
+            if (nums[m] == target)
+                return m;
+            else if (nums[m] > target)
+                r = m - 1;
+            else
+                l = m + 1;
         }
         return -1;
     }
