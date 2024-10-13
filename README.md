@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0015-3sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0015-3sum) |
 | [0031-next-permutation](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0031-next-permutation) |
+| [0035-search-insert-position](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0035-search-insert-position) |
 | [0040-combination-sum-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0040-combination-sum-ii) |
 | [0048-rotate-image](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
@@ -181,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0035-search-insert-position) |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
 | [0792-binary-search](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0792-binary-search) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
