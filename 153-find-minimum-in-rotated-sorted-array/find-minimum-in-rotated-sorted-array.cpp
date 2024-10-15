@@ -1,24 +1,26 @@
 class Solution {
 public:
-    int findMin(std::vector<int>& nums) 
+    int findMin(vector<int>& arr) {
+    int n = arr.size();
+    int l = 0;
+    int r = n - 1;
+    int m;
+    int ans = INT_MAX;
+
+    while (l <= r)
     {
-        int left{ 0 };
-        int right = nums.size() - 1;
-        int middle{ 0 };
+        m = l + floor((r - l) / 2);
 
-        while (left <= right)
+        if (arr[l] <= arr[r])
+            return arr[l];
+
+        if (arr[l] > arr[m]) // cut is in left side
         {
-            middle = left + floor((right - left) / 2);
-
-            //std::cout << "l : " << l << " m : " << m << " r : " << r << "\n";
-
-            if (nums[left] <= nums[right] && nums[left] <= nums[middle])
-                return nums[left];
-            if (nums[left] <= nums[middle] && nums[middle] >= nums[right])
-                left = middle + 1;
-            else if (nums[left] > nums[middle])
-                right = middle;
+            r = m;
         }
-        return 0;
+        else
+            l = m + 1;
+        }
+        return arr[0];   
     }
 };
