@@ -3,15 +3,8 @@ class Solution
 public:
     int shipWithinDays(vector<int> &weights, int k)
     {
-        int l = 1;
-        int r = 0;
-        
-
-        for (int i : weights)
-        {
-            l = l > i ? l : i;
-            r += i;
-        }
+        int l = *max_element(weights.begin(),weights.end());
+        int r = accumulate(weights.begin(),weights.end(),0);
 
         int m;
         int ans = -1;
