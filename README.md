@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0792-binary-search](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0792-binary-search) |
 | [0870-magic-squares-in-grid](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0921-spiral-matrix-iii) |
+| [1056-capacity-to-ship-packages-within-d-days](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1063-best-sightseeing-pair](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1063-best-sightseeing-pair) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
@@ -196,6 +197,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0162-find-peak-element](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0162-find-peak-element) |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
 | [0792-binary-search](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0792-binary-search) |
+| [1056-capacity-to-ship-packages-within-d-days](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
