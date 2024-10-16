@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0921-spiral-matrix-iii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0921-spiral-matrix-iii) |
 | [1063-best-sightseeing-pair](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1063-best-sightseeing-pair) |
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
+| [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -194,6 +195,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0162-find-peak-element](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0162-find-peak-element) |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
 | [0792-binary-search](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0792-binary-search) |
+| [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 ## Simulation
