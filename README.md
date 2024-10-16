@@ -48,6 +48,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1511-count-number-of-teams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1511-count-number-of-teams) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [1646-kth-missing-positive-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1646-kth-missing-positive-number) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
@@ -201,6 +202,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [1646-kth-missing-positive-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1646-kth-missing-positive-number) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 ## Simulation
 |  |
