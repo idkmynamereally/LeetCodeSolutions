@@ -144,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0539-minimum-time-difference](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0539-minimum-time-difference) |
 | [0567-permutation-in-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0567-permutation-in-string) |
 | [1250-longest-common-subsequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1250-longest-common-subsequence) |
+| [1302-delete-characters-to-make-fancy-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [3195-separate-black-and-white-balls](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/3195-separate-black-and-white-balls) |
