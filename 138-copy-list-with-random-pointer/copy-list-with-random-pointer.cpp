@@ -12,7 +12,9 @@ public:
             m[temp] = new Node(temp->val);
             temp = temp->next;
         }
+        
         temp = head;
+        
         while (temp)
         {
             m[temp]->next = m[temp->next];
