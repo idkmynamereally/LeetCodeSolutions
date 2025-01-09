@@ -1,26 +1,15 @@
-class Solution
-{
+class Solution {
 public:
-    int findDuplicate(vector<int>& nums)
-    {
-        int i = 0;
-        int slowI = 0;
-        int fastI = 0;
-        while (1)
+    int findDuplicate(vector<int>& nums) {
+        int i = nums[0];
+
+        while (nums[i] != -1)
         {
-            slowI = nums[slowI];
-            fastI = nums[nums[fastI]];
-            if (slowI == fastI)
-                break;
+            int x = nums[i];
+            nums[i] = -1;
+            i = x;
         }
-        slowI = 0;
-        while (1)
-        {
-            slowI = nums[slowI];
-            fastI = nums[fastI];
-            if (slowI == fastI)
-                break;
-        }
-        return slowI;
+
+        return i;
     }
 };
