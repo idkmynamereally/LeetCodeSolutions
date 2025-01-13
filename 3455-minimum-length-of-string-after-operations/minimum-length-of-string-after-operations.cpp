@@ -3,13 +3,13 @@ public:
     int minimumLength(string s) {
         ios::sync_with_stdio(0); cin.tie(0);
         int n = s.size();
-        unordered_map<char, int> mp;
+        vector<int> mp(26, 0);
         int ans = 0;
 
         for (char c : s)
-            mp[c]++;
+            mp[c - 'a']++;
 
-        for (char c = 'a'; c <= 'z'; c++)
+        for (char c = 0; c <= 25; c++)
         {
             if (!mp[c])
                 continue;
