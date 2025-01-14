@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> findThePrefixCommonArray(vector<int>& a, vector<int>& b) {
         unordered_set<int> s;
-        vector<int> ret(a.size(), 0);
+        vector<int> ret(a.size());
         int ans = 0;
         for (int i = 0; i < a.size(); i++)
         {
