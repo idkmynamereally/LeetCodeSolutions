@@ -6,16 +6,9 @@ public:
 
         for (string s : strs)
         {
-            string key = "";
-            unordered_map<char, int> cnt;
-            for (char c : s)
-                cnt[c]++;
-            for (char c = 'a'; c <= 'z'; c++)
-            {
-                key.push_back(c);
-                key += (to_string(cnt[c]));
-            }
-            mp[key].push_back(s);
+            string k = s;
+            sort(k.begin(), k.end());
+            mp[k].push_back(s);
         }
 
         for (auto it : mp)
