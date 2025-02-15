@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
+| [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
 | [0416-partition-equal-subset-sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0518-coin-change-ii) |
@@ -160,6 +161,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0133-clone-graph) |
 | [0202-happy-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
+| [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0424-longest-repeating-character-replacement) |
 | [0560-subarray-sum-equals-k](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0567-permutation-in-string) |
@@ -170,6 +172,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
@@ -190,6 +193,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0088-merge-sorted-array) |
 | [0179-largest-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0179-largest-number) |
 | [0268-missing-number](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0268-missing-number) |
+| [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
 | [0539-minimum-time-difference](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0539-minimum-time-difference) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1669-minimum-cost-to-cut-a-stick) |
@@ -306,6 +310,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0239-sliding-window-maximum) |
+| [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Data Stream
 |  |
@@ -362,6 +367,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
 | [0190-reverse-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0191-number-of-1-bits) |
+| [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
 ## Number Theory
 |  |
 | ------- |
@@ -372,4 +378,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0695-max-area-of-island) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
