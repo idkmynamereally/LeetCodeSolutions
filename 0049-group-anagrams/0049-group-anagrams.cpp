@@ -1,25 +1,28 @@
-class Solution 
-{
+class Solution {
 public:
-    vector<vector<string>> groupAnagrams(vector<string>& strs)
-    {
-        map<vector<int>, vector<string>> groups{};     //All groups <anagramMap, Strings    
-        string str{};
-        for (int i = 0; i < strs.size(); i++)
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string>> mp;
+        vector<vector<string>> ans;
+
+        for (string s : strs)
         {
-            vector<int> anagramMap(26);
-            str = strs[i];
-            for (const char& c : str)
+            string key = "";
+            unordered_map<char, int> cnt;
+            for (char c : s)
+                cnt[c]++;
+            for (char c = 'a'; c <= 'z'; c++)
             {
-                anagramMap[c - 97]++;
+                key.push_back(c);
+                key += (to_string(cnt[c]));
             }
-            groups[anagramMap].push_back(strs[i]);
+            mp[key].push_back(s);
         }
-        vector<vector<string>> ret;
-        for (auto& v : groups)
+
+        for (auto it : mp)
         {
-            ret.push_back(v.second);
+            ans.push_back(it.second);
         }
-        return ret;
+
+        return ans;
     }
 };
