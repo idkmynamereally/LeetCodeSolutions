@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0035-search-insert-position](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0035-search-insert-position) |
 | [0040-combination-sum-ii](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0040-combination-sum-ii) |
 | [0048-rotate-image](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0048-rotate-image) |
+| [0049-group-anagrams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0056-merge-intervals) |
@@ -135,6 +136,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0010-regular-expression-matching](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0010-regular-expression-matching) |
 | [0014-longest-common-prefix](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0014-longest-common-prefix) |
+| [0049-group-anagrams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0049-group-anagrams) |
 | [0072-edit-distance](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0072-edit-distance) |
 | [0097-interleaving-string](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0097-interleaving-string) |
 | [0115-distinct-subsequences](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0115-distinct-subsequences) |
@@ -152,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0133-clone-graph) |
@@ -181,6 +184,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0015-3sum](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0015-3sum) |
+| [0049-group-anagrams](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0088-merge-sorted-array) |
