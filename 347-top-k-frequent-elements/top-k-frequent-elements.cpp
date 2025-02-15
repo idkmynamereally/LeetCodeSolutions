@@ -1,29 +1,29 @@
-class Solution
-{
+class Solution {
 public:
-    std::vector<int> topKFrequent(std::vector<int>& nums, int k)
-    {
-        //<nums, frequency>
-        std::unordered_map<int, int> m{};
-        for (int i : nums)
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        struct custom
         {
-            m[i]++;
-        }
-        std::vector<std::pair<int, int>> mapList;
-        for (const auto& i : m)
-        {
-            mapList.push_back(i);
-        }
-        std::sort(mapList.begin(), mapList.end(), [](std::pair<int, int> a, std::pair<int, int> b) 
-        {
-                return a.second > b.second;
-        });
-        std::vector<int> ret;
+            bool operator() (const pair<int, int> a, const pair<int, int> b){
+                return a.second < b.second;
+            }
+        };
 
-        for (int i = 0; i < k; i++)
+        vector<int> ans;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, custom> p;
+
+        unordered_map<int, int> mp;
+        for (int i : nums)
+            mp[i]++;
+
+        for (auto it : mp)
+            p.push(it);
+
+        while (k--)
         {
-            ret.push_back(mapList[i].first);
+            ans.push_back(p.top().first);
+            p.pop();
         }
-        return ret;
+
+        return ans;
     }
 };
