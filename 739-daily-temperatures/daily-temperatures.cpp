@@ -1,22 +1,16 @@
-class Solution 
-{
+class Solution {
 public:
-    std::vector<int> dailyTemperatures(std::vector<int>& temperatures)
-    {
-        ios_base::sync_with_stdio(0),cin.tie(0);
-        std::vector<int> ans(std::size(temperatures));
-        std::stack<std::pair<int, int>> tempStack{};      //<temperature, index>
-        int currTemp{};
-        for (int i = 0; i < std::size(temperatures); i++)
+    vector<int> dailyTemperatures(vector<int>& temp) {
+        stack<pair<int, int>> st;
+        vector<int> ans(temp.size(), 0);
+        for (int i = 0; i < temp.size(); i++)
         {
-            currTemp = temperatures[i];
-            while (!(tempStack.empty()) && currTemp > tempStack.top().first)
+            while (!st.empty() && temp[i] > st.top().first)
             {
-                int topIndex = tempStack.top().second;
-                ans[topIndex] = i - topIndex;
-                tempStack.pop();
+                ans[st.top().second] = i - st.top().second;
+                st.pop();
             }
-            tempStack.push(std::pair(currTemp, i));
+            st.push({temp[i], i});
         }
         return ans;
     }
