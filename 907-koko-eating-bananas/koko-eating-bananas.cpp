@@ -1,39 +1,36 @@
+#define ll long long
+
 class Solution {
 public:
-    int minEatingSpeed(std::vector<int>& piles, int h)
-    {
-        cout.tie(0);
-        cin.tie(0);
-        ios_base::sync_with_stdio(0);
-        
-        auto maxer{ *std::max_element(piles.begin(), piles.end()) };
-        
-        int left{ 1 };
-        int right{ maxer };
-        int middle{};
+    int gr;
+    int minEatingSpeed(vector<int>& piles, int h) {
+        gr = h;
+        ll l = 1;
+        ll r = *max_element(piles.begin(), piles.end());
+        ll ans = 0;
 
-        while (left != right)
+        while (l <= r)
         {
-            middle = left + floor((right - left) / 2);
-            auto midWorking = checkK(piles, h, middle);
-
-            if (midWorking)
-                right = middle;
+            ll m = l + ((r - l) / 2);
+            ll hr = timeToEat(piles, m);
+            if (hr <= h)
+            {
+                ans = m;
+                r = m - 1;
+            }
             else
-                left = middle + 1;
+                l = m + 1;
         }
-
-        return left;
+        return ans;
     }
 
-    bool checkK(std::vector<int>& piles, int h, int k)
+    ll timeToEat(vector<int>& p, ll speed)
     {
-        for (int p : piles)
+        ll ret = 0;
+        for (ll i : p)
         {
-            h -= ceil((double)p / k);
-            if (h < 0)
-                return false;
+            ret += ceil((long double)i / speed);
         }
-        return true;
+        return ret;
     }
 };
