@@ -10,8 +10,7 @@ public:
         while (l <= r)
         {
             ll m = l + ((r - l) / 2);
-            ll hr = timeToEat(piles, m);
-            if (hr <= h)
+            if (timeToEat(piles, m, h))
             {
                 ans = m;
                 r = m - 1;
@@ -22,13 +21,14 @@ public:
         return ans;
     }
 
-    ll timeToEat(vector<int>& p, ll speed)
+    bool timeToEat(vector<int>& p, ll speed, ll h)
     {
-        ll ret = 0;
-        for (ll i : p)
+        for (int i : p)
         {
-            ret += ceil((long double)i / speed);
+            h -= ceil((long double) i / speed);
+            if (h < 0)
+                return false;
         }
-        return ret;
+        return true;
     }
 };
