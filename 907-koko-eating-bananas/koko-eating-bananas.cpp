@@ -3,13 +3,13 @@
 class Solution {
 public:
     int minEatingSpeed(vector<int>& piles, int h) {
-        ll l = 1;
-        ll r = *max_element(piles.begin(), piles.end());
-        ll ans = 0;
+        int l = 1;
+        int r = *max_element(piles.begin(), piles.end());
+        int ans = 0;
 
         while (l <= r)
         {
-            ll m = l + ((r - l) / 2);
+            int m = l + ((r - l) / 2);
             if (timeToEat(piles, m, h))
             {
                 ans = m;
@@ -21,7 +21,7 @@ public:
         return ans;
     }
 
-    bool timeToEat(vector<int>& p, ll speed, ll h)
+    bool timeToEat(vector<int>& p, int speed, int h)
     {
         for (int i : p)
         {
