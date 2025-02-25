@@ -25,7 +25,7 @@ public:
     {
         for (int i : p)
         {
-            h -= ceil((long double) i / speed);
+            h -= ceil((double) i / speed);
             if (h < 0)
                 return false;
         }
