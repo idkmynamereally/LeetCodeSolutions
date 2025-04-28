@@ -390,4 +390,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/0347-top-k-frequent-elements) |
+## Database
+|  |
+| ------- |
+| [1258-article-views-i](https://github.com/idkmynamereally/LeetCodeSolutions/tree/master/1258-article-views-i) |
 <!---LeetCode Topics End-->
